@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Lato';
+    font-family: 'Monoton';
 }
 
 /* from Bulma-keeping font awesome icons insync */
@@ -56,6 +56,10 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -72,10 +76,10 @@ body {
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 1030;
     }
 
     .header-container {
-        padding-top: 16px;
+        padding-top: 164px;
     }
 }
