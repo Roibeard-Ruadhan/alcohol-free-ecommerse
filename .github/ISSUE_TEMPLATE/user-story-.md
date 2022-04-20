@@ -7,4 +7,4 @@ assignees: Roibeard-Ruadhan
 
 ---
 
-As a **role** I can **capability** so that **received benefit**
+As a **shopper** I can **capability** so that **received benefit**
