@@ -8,7 +8,7 @@
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Drinkss</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Drinks</a>
             </div>
         </li>
 
@@ -22,6 +22,7 @@
                 <a href="{% url 'products' %}?category=wheat_beers" class="dropdown-item">Wheat Beers</a>
                 <a href="{% url 'products' %}?category=fruit_beers" class="dropdown-item">Fruit Beers</a>
                 <a href="{% url 'products' %}?category=ciders" class="dropdown-item">Ciders</a>
+                <a href="{% url 'products' %}?category=lagers,stout_ales,wheat_beers,fruit_beers,ciders" class="dropdown-item">All Beers & Ciders</a>
             </div>
         </li>
 
@@ -34,6 +35,7 @@
                 <a href="{% url 'products' %}?category=white_wines" class="dropdown-item">White Wines</a>
                 <a href="{% url 'products' %}?category=rose_wines" class="dropdown-item">Rose Wines</a>
                 <a href="{% url 'products' %}?category=sparkling_wines" class="dropdown-item">Sparkling Wines</a>
+                <a href="{% url 'products' %}?category=red_wines,white_wines,rose_wines,sparkling_wines" class="dropdown-item">All Wines</a>
             </div>
         </li>
 
@@ -46,6 +48,7 @@
                 <a href="{% url 'products' %}?category=whiskey" class="dropdown-item">Whiskey</a>
                 <a href="{% url 'products' %}?category=rum" class="dropdown-item">Rum</a>
                 <a href="{% url 'products' %}?category=other" class="dropdown-item">Other</a>
+                <a href="{% url 'products' %}?category=gin,whiskey,rum,other" class="dropdown-item">All Spirits</a>
             </div>
         </li>
 
