@@ -1,8 +1,10 @@
 from django.shortcuts import (
     render, redirect, reverse,
     get_object_or_404, HttpResponse)
-from products.models import Product
 from django.contrib import messages
+
+from products.models import Product
+
 
 # Create your views here.
 
@@ -10,6 +12,7 @@ def view_bag(request):
     """ A view that renders the bag contents page """
 
     return render(request, 'bag/bag.html')
+
 
 def add_to_bag(request, item_id):
     """ Add a quantity of item to bag """
