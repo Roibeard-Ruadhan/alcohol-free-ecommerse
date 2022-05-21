@@ -9,12 +9,11 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-import os
-if os.path.exists("env.py"):
-  import env
-
 from pathlib import Path
+import os
 import dj_database_url
+if os.path.exists("env.py"):
+    import env
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
