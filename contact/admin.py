@@ -1,3 +1,32 @@
 from django.contrib import admin
+from .models import Contact
 
-# Register your models here.
+
+class ContactAdmin(admin.ModelAdmin):
+    """
+    Setup Contact section in Admin Panel
+    """
+
+    list_display = (
+        'first_name',
+        'email',
+        'message',
+        'date',
+    )
+
+    readonly_fields = (
+        'first_name',
+        'email',
+        'message',
+        'date',
+    )
+
+    search_fields = (
+        'message',
+        'first_name',
+    )
+
+    ordering = ['-date']
+
+
+admin.site.register(Contact, ContactAdmin)

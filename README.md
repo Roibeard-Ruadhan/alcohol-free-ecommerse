@@ -217,5 +217,8 @@ Link to [live site](https://)
 
 ### **Acknowledgements**
 
+### **Disclaimer**
+This project is for educational purposes only.
+
 
 [Back to contents](#contents)
