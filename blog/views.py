@@ -4,4 +4,11 @@ from django.shortcuts import render
 
 def blog(request):
     """ A view to render the blogs page """
-    return render(request, 'blog/blog.html')
+
+    blog = Blog.objects.all()
+    template = 'blog/blogs.html'
+    context = {
+        'blog': blog,
+    }
+
+    return render(request, template, context)
