@@ -1,28 +1,40 @@
-from django import forms
-from .models import Blog
+from django.contrib import admin
+from .models import BlogPost, BlogComment
 
 
-class BlogForm(forms.ModelForm):
-    """ Create BlogForm class for Admin """
+class BlogPostAdmin(admin.ModelAdmin):
+    """
+    Setup Blog Post section of Admin Panel
+    """
 
-    class Meta:
-        """ Update Class Meta Data """
-        model = Blog
-        fields = '__all__'
+    list_display = (
+        'title',
+        'created_on',
+        'image',
+    )
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        placeholders = {
-            'blog_title': 'e.g Now that is a Mojito',
-            'blog_content': 'e.g Fresh mint leaves with crushed ice',
-            'author': 'Joe Bloggs',
-            'image': 'Image Upload',
-            'date_created': '25th of September 2022'
-        }
-        self.fields['blog_title'].widget.attrs['autofocus'] = True
-        for field in self.fields:
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            else:
-                placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder
+    search_fields = (
+        'title',
+        'body_text',
+    )
+
+
+class BlogCommentAdmin(admin.ModelAdmin):
+    """
+    Setup Blog Comment section of Admin Panel
+    """
+    list_display = (
+        'user',
+        'blog_post',
+        'comment',
+        'created_on',
+    )
+
+    search_fields = (
+        'user',
+        'comment',
+    )
+
+
+admin.site.register(BlogPost, BlogPostAdmin)
+admin.site.register(BlogComment, BlogCommentAdmin)
