@@ -50,7 +50,7 @@
                         <div class="edit-delete-links text-end">
                             <a href="{% url 'edit_blog' blog_post.id %}" class="edit-link info-text">Edit</a>
                             <span> | </span>
-                            
+                            <a href="{% url 'delete_blog_post' blog_post.id %}" class="delete-link error-text">Delete</a>
                         </div>
                     {% endif %}
                 </div>
@@ -74,7 +74,7 @@
                             <div class="card-body comment-body">
                                 <div class="blog-body-tex">{{ comment.comment | linebreaks }}</div>
                                 {% if request.user.is_superuser %}
-                                
+                                    <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>
                                 {% endif %}
                             </div>  
                         </div>
