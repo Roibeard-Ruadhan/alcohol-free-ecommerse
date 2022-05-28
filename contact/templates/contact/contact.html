@@ -16,13 +16,13 @@
     <div class="container">
         <!-- Page Heading -->
         <div class="row">
-            <div class="col page-heading">
+            <div class="col page-heading text-white">
                 <h1 class="heading">Contact Us</h1>
             </div>
         </div>
     
         <div class="row">
-            <div class="col-12 col-md-8 offset-md-2">
+            <div class="col-12 col-md-8 offset-md-2 text-white">
                 <div>
                     <!-- Contact Form -->
                     <form action="{% url 'contact' %}" method="POST" class="form">
@@ -30,7 +30,7 @@
                         {{ contact_form|crispy }}
                         <div class="text-end">
                             <!-- Submit button -->
-                            <button id="submit-button" class="btn button dark-bg-btn">
+                            <button id="submit-button" class="btn button dark-bg-btn text-white">
                                 <span class="p-text text-bold">Send Message</span>
                             </button>
                         </div>
