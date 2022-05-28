@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}- {{ blog_post.title }}{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block page_header %}
+    <div class="header-container container">
+        <div class="row">
+            <div class="col">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        
+        <div class="row">
+            <!-- Page Heading -->
+            <div class="col page-heading">
+                <h1 class="heading">{{ blog_post.title }}</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="blog-image-container text-center">
+                    {% if blog_post.image %}
+                        <a href="{{ blog_post.image.url }}" target="_blank"  rel="noopener">
+                            <img src="{{ blog_post.image.url }}" alt="{{ blog_post.title }}" class="img-fluid">
+                        </a>
+                    {% else %}
+                        <a href="{{ MEDIA_URL }}noimage.png" target="_blank"  rel="noopener">
+                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ blog_post.title }}" class="img-fluid">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-8 offset-md-2">
+                <div class="blog-details-container">
+                    <div class="blog-body-text mt-5">{{ blog_post.body_text | linebreaks }}</div>
+                    <p class="blog-info text-muted mt-4 text-end">{{ blog_post.user }} | {{ blog_post.created_on}}</p>
+                    <!-- Blog edit/delete links -->
+                    {% if request.user.is_superuser %}
+                        <div class="edit-delete-links text-end">
+                            <a href="{% url 'edit_blog' blog_post.id %}" class="edit-link info-text">Edit</a>
+                            <span> | </span>
+                            
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Comments -->
+        <div class="row comments-container">
+            <div class="col-12 col-md-4 offset-md-4 mt-3 mb-3">
+                <span class="sub-heading">Comments</span>
+                <span class="p-text text-end ms-auto">{{ comments.count }}</span>
+            </div>
+            {% for comment in comments %}   
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-3">
+                        <div class="card mb-3">
+                            <div class="card-header comment-header">
+                                <p class="p-text text-bold">{{ comment.user }}'s Comment</p>
+                                <p class="text-muted text-end">{{ comment.created_on }}</p>
+                            </div>
+                            <div class="card-body comment-body">
+                                <div class="blog-body-tex">{{ comment.comment | linebreaks }}</div>
+                                {% if request.user.is_superuser %}
+                                
+                                {% endif %}
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+             <!-- Comment Form -->
+            <div class="comment-form-container">
+                <div class="row">
+                    <div class="col-12 col-md-6 offset-md-3">
+                        {% if request.user.is_anonymous %}
+                            <p class="p-text">Please
+                                <a class="info-text p-text" href="{% url 'account_login' %}"> Login </a> or
+                                <a class="info-text p-text" href="{% url 'account_signup' %}">Signup</a>
+                                to add a comment.</p>
+                        {% else %}
+                            <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
+                                {% csrf_token %}
+                                {{ comment_form|crispy }}
+                                <button class="button btn light-bg-btn" type="submit">Add Comment</button>
+                            </form>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Back to top button -->
+    <div class="btt-button shadow-sm">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up mx-auto my-auto"></i>
+        </a>	
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <!-- Javascript for back to top button -->
+    <script src="{% static 'blog/js/btt_button.js' %}"></script>
+    
+{% endblock %}
