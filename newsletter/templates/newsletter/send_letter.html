@@ -1,7 +1,14 @@
-{% extends 'partials/base.html' %}
+{% extends "base.html" %}
 {% block title %}Mail Page {% endblock %}
 
 {% load crispy_forms_tags %}
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
 {% block content %}
 <div class="container">
     <div class="row mt-5 pt-5">
