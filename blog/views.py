@@ -145,3 +145,20 @@ def delete_blog_post(request, blog_post_id):
         return redirect(reverse('home'))
 
     return redirect(reverse('blog'))
+
+
+# Delete Comment
+@login_required
+def delete_comment(request, comment_id):
+    """
+    Allow an admin user to delete a comment
+    """
+    if request.user.is_superuser:
+        comment = BlogComment.objects.get(pk=comment_id)
+        comment.delete()
+        messages.info(request, 'Comment deleted!')
+    else:
+        messages.error(request, 'Sorry, you do not have permission for that.')
+        return redirect(reverse('home'))
+
+    return redirect('blog')

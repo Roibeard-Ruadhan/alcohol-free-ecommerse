@@ -35,6 +35,11 @@ class BlogCommentAdmin(admin.ModelAdmin):
         'comment',
     )
 
+    actions = ['approve_comments']
+
+    def approve_comments(self, request, queryset):
+        queryset.update(active=True)
+
 
 admin.site.register(BlogPost, BlogPostAdmin)
 admin.site.register(BlogComment, BlogCommentAdmin)

@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    background: url('/media/test.png') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+     url('/media/test-2.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
