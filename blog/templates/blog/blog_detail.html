@@ -59,9 +59,9 @@
 
         <!-- Comments -->
         <div class="row text-black comments-container">
-            <div class="col-12 col-md-4 offset-md-4 mt-3 mb-3">
+            <div class="col-12 col-md-4 offset-md-4 mt-3 mb-3 text-white">
                 <span class="sub-heading">Comments</span>
-                <span class="p-text text-white text-end ms-auto">{{ comments.count }}</span>
+                <span class="p-text text-end ms-auto">{{ comments.count }}</span>
             </div>
             {% for comment in comments %}   
                 <div class="row">
@@ -94,7 +94,7 @@
                             <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
                                 {% csrf_token %}
                                 {{ comment_form|crispy }}
-                                <button class="button btn light-bg-btn" type="submit">Add Comment</button>
+                                <button class="button btn light-bg-btn text-white border" type="submit">Add Comment</button>
                             </form>
                         {% endif %}
                     </div>

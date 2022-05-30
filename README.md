@@ -7,7 +7,7 @@ https://github.com/Roibeard-Ruadhan/alcohol-free-ecommerse
 
 **The Alcohol Free Shop** is an interactive book review site aimed at book lovers looking to find reviews on books they are interested in reading and allows them to leave reviews for ones they have read. The site is designed to be responsive and easy to navigate on a range of devices to make it accessible for book lovers. 
 
-Link to [live site](https://)
+Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 
 ## **Contents**
 
