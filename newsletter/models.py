@@ -12,7 +12,7 @@ class Subscribers(models.Model):
         verbose_name_plural = 'Subscribers'
 
 
-class MailMessage(models.Model):
+class SendMessage(models.Model):
     title = models.CharField(max_length=100, null=True)
     message = models.TextField(null=True)
 

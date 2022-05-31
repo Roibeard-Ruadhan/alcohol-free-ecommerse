@@ -1,5 +1,5 @@
 from django import forms
-from . models import Subscribers, MailMessage
+from . models import Subscribers, SendMessage
 
 
 class SubscibersForm(forms.ModelForm):
@@ -8,7 +8,7 @@ class SubscibersForm(forms.ModelForm):
         fields = ['email', ]
 
 
-class MailMessageForm(forms.ModelForm):
+class SendMessageForm(forms.ModelForm):
     class Meta:
-        model = MailMessage
+        model = SendMessage
         fields = '__all__'

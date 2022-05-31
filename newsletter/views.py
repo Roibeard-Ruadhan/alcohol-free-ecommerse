@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from . forms import SubscibersForm, MailMessageForm
+from . forms import SubscibersForm, SendMessageForm
 from . models import Subscribers
 from django.contrib import messages
 from django.core.mail import send_mail
@@ -18,16 +18,16 @@ def footer_letter(request):
     context = {
         'form': form,
     }
-    return render(request, 'base.html', context)
+    return render(request, 'home.html', context)
 
 
-def mail_letter(request):
+def send_letter(request):
     emails = Subscribers.objects.all()
     df = read_frame(emails, fieldnames=['email'])
     mail_list = df['email'].values.tolist()
     print(mail_list)
     if request.method == 'POST':
-        form = MailMessageForm(request.POST)
+        form = SendMessageForm(request.POST)
         if form.is_valid():
             form.save()
             title = form.cleaned_data.get('title')
@@ -42,8 +42,8 @@ def mail_letter(request):
             messages.success(request, 'Message has been sent to the Mail List')
             return redirect('send-letter')
     else:
-        form = MailMessageForm()
+        form = SendMessageForm()
     context = {
         'form': form,
     }
-    return render(request, 'newsletter/send_letter.html', context)
+    return render(request, 'send_letter.html', context)
