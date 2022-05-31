@@ -8,25 +8,29 @@ class ContactAdmin(admin.ModelAdmin):
     """
 
     list_display = (
-        'name',
+        'subject',
+        'full_name',
         'email',
         'message',
         'date',
     )
 
     readonly_fields = (
-        'name',
+        'subject',
+        'full_name',
         'email',
         'message',
         'date',
     )
 
     search_fields = (
+        'subject',
         'message',
-        'name',
+        'full_name',
     )
 
     ordering = ['-date']
+
 
 
 admin.site.register(Contact_message, ContactAdmin)

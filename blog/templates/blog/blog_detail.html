@@ -28,7 +28,7 @@
 
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2">
-                <div class="blog-image-container text-center">
+                <div class="blog-image-container blog-image text-center">
                     {% if blog_post.image %}
                         <a href="{{ blog_post.image.url }}" target="_blank"  rel="noopener">
                             <img src="{{ blog_post.image.url }}" alt="{{ blog_post.title }}" class="img-fluid">
@@ -67,11 +67,11 @@
                 <div class="row">
                     <div class="col-12 col-md-6 offset-md-3">
                         <div class="card mb-3">
-                            <div class="card-header comment-header">
+                            <div class="card-header comment-header position-center">
                                 <p class="p-text text-bold">{{ comment.user }}'s Comment</p>
                                 <p class="text-muted text-end">{{ comment.created_on }}</p>
                             </div>
-                            <div class="card-body comment-body">
+                            <div class="card-body comment-body position-center">
                                 <div class="blog-body-tex">{{ comment.comment | linebreaks }}</div>
                                 {% if request.user.is_superuser %}
                                     <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>

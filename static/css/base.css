@@ -10,7 +10,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Convergence', sans-serif;;
+    font-family: 'Convergence', sans-serif;
 }
 /* from Bulma */
 .icon {
