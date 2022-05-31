@@ -18,7 +18,7 @@ def footer_letter(request):
     context = {
         'form': form,
     }
-    return render(request, 'home.html', context)
+    return render(request, 'base.html', context)
 
 
 def send_letter(request):
@@ -46,4 +46,4 @@ def send_letter(request):
     context = {
         'form': form,
     }
-    return render(request, 'send_letter.html', context)
+    return render(request, 'newsletter/send_letters.html', context)

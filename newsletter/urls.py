@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.footer_letter, name='letter-footer'),
-    path('send_letter/', views.send_letter, name='send-letter')
+    path('send_letters/', views.send_letter, name='send-letter')
 ]
