@@ -1,21 +1,21 @@
 from django.contrib import admin
-from .models import Contact
+from .models import Contact_message
 
 
 class ContactAdmin(admin.ModelAdmin):
     """
-    Setup Contact section in Admin Panel
+    Setup Contact section as viewed in Admin Panel
     """
 
     list_display = (
-        'first_name',
+        'name',
         'email',
         'message',
         'date',
     )
 
     readonly_fields = (
-        'first_name',
+        'name',
         'email',
         'message',
         'date',
@@ -23,10 +23,10 @@ class ContactAdmin(admin.ModelAdmin):
 
     search_fields = (
         'message',
-        'first_name',
+        'name',
     )
 
     ordering = ['-date']
 
 
-admin.site.register(Contact, ContactAdmin)
+admin.site.register(Contact_message, ContactAdmin)

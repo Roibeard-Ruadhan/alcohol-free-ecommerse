@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load crispy_forms_tags %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -39,7 +39,7 @@
   <body>
     <header class="container-fluid fixed-top">
         <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
+            <div class="col bg-dark text-white">
                 <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
         </div>
@@ -175,7 +175,7 @@
             <div class="input-group">
               <form method="POST">
                     {% csrf_token %}
-                <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
+                <input type="email" placeholder="Enter email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
                 <div class="input-group-append">
                     <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane value="Subscribe""></i></button>
                 </div>
