@@ -84,8 +84,13 @@ body {
     color: #ffc371 !important;
 }
 
-#mc_embed_signup .button:hover {
-    color: #ffc371 !important;
+.heading {
+    justify-content: center;
+    text-align: center;
+}
+
+p.p-text {
+    text-align: center;
 }
 
 .text-black {
@@ -398,13 +403,4 @@ a.category-badge > span.badge:hover {
 
 .increment-qty, .decrement-qty {
     padding: .25rem .5rem !important;
-}
-
-.heading {
-    justify-content: center;
-    text-align: center;
-}
-
-p.p-text {
-    text-align: center;
 }
