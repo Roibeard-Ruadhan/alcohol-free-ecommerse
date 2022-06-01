@@ -71,7 +71,7 @@
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
+                                <p class="my-0 hover">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border" aria-labelledby="user-options">
@@ -148,26 +148,26 @@
             <li class="list-inline-item"><a href="www.twitter.com" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
             <li class="list-inline-item"><a href="https://www.facebook.com/Alcohol-Free-Shop-101298052611366" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
             <li class="list-inline-item"><a href="www.instagram.com" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
-            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
+            <li class="list-inline-item"><a href="www.pinterest.com" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="www.vimeo.com" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Beers & Ciders</a></li>
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Wines</a></li>
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Spirits</a></li>
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Mocktails</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'products' %}?category=lagers,stout_ales,wheat_beers,fruit_beers,ciders" style="color: #ffc371;">Beers & Ciders</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'products' %}?category=red_wines,white_wines,rose_wines,sparkling_wines" style="color: #ffc371;">Wines</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'products' %}?category=gin,whiskey,rum,other" style="color: #ffc371;">Spirits</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'blog' %}" style="color: #ffc371;">Mocktails</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Login</a></li>
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Register</a></li>
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Contact Us</a></li>
-            <li class="mb-2"><a href="#" style="color: #ffc371;">Our Products</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'account_login' %}" style="color: #ffc371;">Login</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'account_signup' %}" style="color: #ffc371;">Register</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'contact' %}" style="color: #ffc371;">Contact Us</a></li>
+            <li class="mb-2 hover-2"><a href="{% url 'products' %}" style="color: #ffc371;">Our Products</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">

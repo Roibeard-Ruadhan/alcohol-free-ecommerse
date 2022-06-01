@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
      url('/media/test-2.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
@@ -371,6 +371,14 @@ a.category-badge > span.badge:hover {
     font-size: 1rem;
 }
 
+.hover:hover {
+    color: #125E8A!important;
+} 
+
+.hover-2:hover {
+    color: whitesmoke!important;
+}
+
 #delivery-banner h4 {
     font-size: 1.3rem;
 }
@@ -379,6 +387,7 @@ a.category-badge > span.badge:hover {
 .btn.btn-black.rounded-0 {
     padding: .375rem .375rem;
     background-color: #000 !important;
+    margin: 1rem;
 }
 
 .btn.btn-outline-black.rounded-0.btn-lg,
