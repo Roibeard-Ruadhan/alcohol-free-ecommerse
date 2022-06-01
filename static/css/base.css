@@ -45,16 +45,22 @@ body {
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    background: black;
+    color: white !important; /* use important to override link colors for <a> elements */
     border: .5px solid black;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
-    color: white !important;
+    background: white;
+    color: #ffc371 !important;
+}
+
+.allauth-form-inner-content button:hover, 
+.allauth-form-inner-content input[type='submit']:hover {
+    background: white;
+    color: #ffc371 !important;
 }
 
 .shop-now-button:hover,
@@ -64,7 +70,7 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: #ffc371 !important;;
 }
 
 .text-black {
