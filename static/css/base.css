@@ -399,3 +399,12 @@ a.category-badge > span.badge:hover {
 .increment-qty, .decrement-qty {
     padding: .25rem .5rem !important;
 }
+
+.heading {
+    justify-content: center;
+    text-align: center;
+}
+
+p.p-text {
+    text-align: center;
+}
