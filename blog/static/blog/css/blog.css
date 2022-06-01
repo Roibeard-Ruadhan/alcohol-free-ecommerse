@@ -6,3 +6,10 @@
 p.p-text {
     text-align: center;
 }
+
+.try {
+    background: -webkit-linear-gradient(to right, #125E8A, #211A1D);
+    background: linear-gradient(to right, #125E8A, #211A1D);
+    padding: 2rem;
+    margin:1rem;
+}

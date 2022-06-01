@@ -42,7 +42,7 @@
             </div>
             
             <div class="col-12 col-md-8 offset-md-2">
-                <div class="blog-details-container">
+                <div class="blog-details-container try">
                     <div class="blog-body-text text-white mt-5">{{ blog_post.body_text | linebreaks }}</div>
                     <p class="blog-info text-white mt-4 text-end">{{ blog_post.user }} | {{ blog_post.created_on}}</p>
                     <!-- Blog edit/delete links -->
@@ -60,7 +60,7 @@
         <!-- Comments -->
         <div class="row text-black comments-container">
             <div class="col-12 col-md-4 offset-md-4 mt-3 mb-3 text-white">
-                <span class="sub-heading">Comments</span>
+                <span class="sub-heading btn btn-black">Comments</span>
                 <span class="p-text text-end ms-auto">{{ comments.count }}</span>
             </div>
             {% for comment in comments %}   
@@ -94,7 +94,7 @@
                             <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
                                 {% csrf_token %}
                                 {{ comment_form|crispy }}
-                                <button class="button btn light-bg-btn text-white border" type="submit">Add Comment</button>
+                                <button class="button btn btn btn-black text-white" type="submit">Add Comment</button>
                             </form>
                         {% endif %}
                     </div>
