@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from django.conf.urls import handler404, handler500 
+from django.conf.urls import handler403, handler404, handler500 
 
 
 urlpatterns = [
@@ -33,8 +33,25 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-
+handler403 = 'bag.views.error_403'
+handler404 = 'bag.views.error_404'
+handler500 = 'bag.views.error_500'
+handler403 = 'checkout.views.error_403'
+handler404 = 'checkout.views.error_404'
+handler500 = 'checkout.views.error_500'
+handler403 = 'contact.views.error_403'
+handler404 = 'contact.views.error_404'
+handler500 = 'contact.views.error_500'
+handler403 = 'home.views.error_403'
 handler404 = 'home.views.error_404'
-
 handler500 = 'home.views.error_500'
+handler403 = 'products.views.error_403'
+handler404 = 'products.views.error_404'
+handler500 = 'products.views.error_500'
+handler403 = 'profiles.views.error_403'
+handler404 = 'profiles.views.error_404'
+handler500 = 'profiles.views.error_500'
+# handler403 = 'reviews.views.error_403'
+# handler404 = 'reviews.views.error_404'
+# handler500 = 'reviews.views.error_500'
 
