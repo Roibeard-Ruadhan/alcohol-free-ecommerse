@@ -109,7 +109,14 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 - [Gitpod IDE](https://www.gitpod.io/) - Development environment where the site was built.
 - [Gimp 2.1](https://www.gimp.org/) - Used for editing, scaling images.
 - [favicon.io](https://favicon.io/) - Used for creating a favicon.
-- [Bulkresizephoto's](https://bulkresizephotos.com/en) - Used for compressing images.
+- [Bulkresizephoto's](https://bulkresizephotos.com/en) - Used for compressing & transering images to png.
+- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools) - Used throughout the development of the website to quickly see changes, find problems and debug. Also used to view website in different device views.
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome Dev Tools - Used for site performance review.
+- [W3C HTML validator](https://validator.w3.org/) - Used to validate code.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/) - Used to validate code.
+- [JSHint](https://jshint.com/) – Used to validate Javascript code
+- [Coolors](https://coolors.co/) - Used for selecting complimentary colour palettes.
+
 
 ### **Languages**
 
@@ -208,7 +215,19 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 
 ## **Deployment**
 
-## Heroku Deployment
+### Github
+The project was developed using [GitPod](https://gitpod.io/) and pushed to [GitHub](https://github.com/) then deployed on Heroku using these instructions:
+
+1. Create a requirements.txt file using command *pip3 freeze --local > requirements.txt*
+2. Create a Procfile with the terminal command *echo web: python app.py > Procfile* and at this point checking the Procfile to make sure there is no stray line as this can cause issues when deploying to Heroku.
+3. The new requirements file and Procfile committed to GitHub.
+4. New app created in Heroku by clicking "New" and "Create New App" and giving it an original name and setting the region to closest to location.
+5. From Heroku dashboard click "Deploy" -> "Deployment Method" and select "GitHub"
+6. Search for GitHub repo and connect.
+7. In the dashboard click "Settings" -> "Reveal Config Vars"
+8. Set config vars:
+
+### Heroku Deployment
 
 1.	Login to Heroku.com and click New -> Create New App
 
