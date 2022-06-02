@@ -1,8 +1,12 @@
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.contrib import messages
+from django.http import Http404
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from reviews.views import submit_review, find_rating_average
+from reviews.form import ReviewForm
+from reviews.models import Reviews
 from django.db.models.functions import Lower
 
 from .models import Product, Category
@@ -83,12 +87,24 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    review_form = ReviewForm(data=request.POST or None)
+    reviews = Reviews.objects.filter(
+        product=product).order_by('-created_on')
+    total_reviews = reviews.count()
+    rating_average = find_rating_average(reviews)
+    Product.objects.filter(id=product.id).update(
+        rating=rating_average)
 
     context = {
         'product': product,
+        'review_form': review_form,
+        'reviews': reviews,
+        'total_reviews': total_reviews,
+        'rating_average': rating_average
     }
 
     return render(request, 'products/product_detail.html', context)
+
 
 
 @login_required

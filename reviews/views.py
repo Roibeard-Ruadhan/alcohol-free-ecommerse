@@ -2,8 +2,11 @@ from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.shortcuts import render
 from .models import Reviews
+from django.contrib import messages
 from .form import ReviewForm
+from django.contrib.auth.decorators import login_required
 from products.models import Product, Category
+
 
 # Create your views here.
 def error_403(request, exception):
@@ -43,7 +46,7 @@ def submit_review(request, product_id):
                         review=request.POST['review'],
                 )
                 reviews = Reviews.objects.filter(product=product)
-                rating_average = get_average_rating(reviews)
+                rating_average = find_rating_average(reviews)
                 Product.objects.filter(id=product.id).update(
                     rating=rating_average)
                 messages.success(
@@ -56,3 +59,25 @@ def submit_review(request, product_id):
         messages.error(request, 'Your review has not been submitted')
     messages.error(request, 'Invalid Method.')
     return redirect(reverse('product_detail', args=[product.id]))
+
+
+def find_rating_average(reviews):
+    """
+    Function to get the average rating of product
+    from the reviews
+    """
+    total_reviews = 0
+    ratings_total = 0
+    rating_average = 0
+    for review in reviews:
+        total_reviews = total_reviews + 1
+        ratings_total = ratings_total + review.rating
+
+    if total_reviews > 0:
+        average_rating = (ratings_total / total_reviews)
+        rating_average = round(average_rating, 1)
+        return rating_average
+    else:
+        return rating_average
+
+
