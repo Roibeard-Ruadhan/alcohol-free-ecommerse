@@ -114,6 +114,7 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/) - Used to validate code.
 - [JSHint](https://jshint.com/) – Used to validate Javascript code
 - [Coolors](https://coolors.co/) - Used for selecting complimentary colour palettes.
+- [Facebook page](https://www.facebook.com/Alcohol-Free-Shop-101298052611366) - Used Facebook page to promote website
 
 ### **Languages**
 
