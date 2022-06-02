@@ -1,10 +1,14 @@
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.shortcuts import render
+from django.views.generic import UpdateView, DeleteView
 from .models import Reviews
 from django.contrib import messages
 from .form import ReviewForm
+from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from products.models import Product, Category
 
 
@@ -81,3 +85,44 @@ def find_rating_average(reviews):
         return rating_average
 
 
+# Redirect to previous page
+class RedirectToPreviousMixin:
+    """
+    A view to Redirect back to page
+    """
+    default_redirect = '/'
+
+    def get(self, request, *args, **kwargs):
+        request.session['previous_page'] = request.META.get(
+            'HTTP_REFERER', self.default_redirect)
+        return super().get(request, *args, **kwargs)
+
+    def get_success_url(self):
+        return self.request.session['previous_page']
+
+
+class UpdateReview(RedirectToPreviousMixin, LoginRequiredMixin,
+                       SuccessMessageMixin, UpdateView):
+    """
+    A view to edit a Review
+    """
+    model = Reviews
+    form_class = ReviewForm
+    template_name = "products/update_review.html"
+    success_message = "Your review has been updated"
+
+
+class DeleteReview(LoginRequiredMixin, DeleteView):
+    '''
+    View displays the option to delete the review to the user.
+    '''
+    model = Reviews
+    template_name = 'products/delete_review.html'
+    success_url = reverse_lazy('products')
+
+    def delete(self, request, *args, **kwargs):
+        """ delete product message """
+        response = super().delete(request, *args, **kwargs)
+        messages.success(
+            self.request, 'Your Review has been deleted sucessfully!')
+        return response

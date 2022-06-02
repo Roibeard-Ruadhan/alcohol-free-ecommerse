@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.http import Http404
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from reviews.views import submit_review, find_rating_average
+from reviews.views import submit_review, find_rating_average, UpdateReview, DeleteReview
 from reviews.form import ReviewForm
 from reviews.models import Reviews
 from django.db.models.functions import Lower
