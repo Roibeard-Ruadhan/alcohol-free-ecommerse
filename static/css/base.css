@@ -6,7 +6,7 @@ html {
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-     url('/media/test-2.png') no-repeat center center fixed;
+     url('/media/hero.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -110,6 +110,10 @@ body {
 	z-index: -1;
 }
 
+.text-info {
+    color: #28a745;
+}
+
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -134,8 +138,11 @@ a.category-badge > span.badge:hover {
 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
-/* ------------------------------- bootstrap toasts */
+#mc_embed_signup .button:hover {
+    color: #ffc371 !important;
+}
 
+/* ------------------------------- bootstrap toasts */
 .message-container {
     position: fixed;
     top: 72px;
