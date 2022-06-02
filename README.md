@@ -1,11 +1,9 @@
 https://github.com/Roibeard-Ruadhan/alcohol-free-ecommerse
 
 # The Alcohol Free Shop
-
+**The Alcohol Free Shop** is an ecommerce website allowing users to purchase Alcohol-Free drinks developed for my e-commerse Project 5 as part of the Code Institute - Diploma in Software Development (Full stack) Diploma.
 
 ## About
-
-**The Alcohol Free Shop** is an ecommerce website allowing users to purchase Alcohol-Free drinks developed for my e-commerse Project 5 as part of the Code Institute - Diploma in Software Development (Full stack) Diploma.
 
 Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 
@@ -108,7 +106,7 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 - [GitHub](https://github.com) - Used to store the project repository.
 - [Gitpod IDE](https://www.gitpod.io/) - Development environment where the site was built.
 - [Gimp 2.1](https://www.gimp.org/) - Used for editing, scaling images.
-- [favicon.io](https://favicon.io/) - Used for creating a favicon.
+- [icons8](https://icons8.com) - Used for creating a favicon.
 - [Bulkresizephoto's](https://bulkresizephotos.com/en) - Used for compressing & transering images to png.
 - [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools) - Used throughout the development of the website to quickly see changes, find problems and debug. Also used to view website in different device views.
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome Dev Tools - Used for site performance review.
@@ -116,7 +114,6 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/) - Used to validate code.
 - [JSHint](https://jshint.com/) – Used to validate Javascript code
 - [Coolors](https://coolors.co/) - Used for selecting complimentary colour palettes.
-
 
 ### **Languages**
 
