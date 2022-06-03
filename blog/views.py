@@ -1,10 +1,14 @@
 from django.shortcuts import (
-    render, redirect, reverse, get_object_or_404, HttpResponse)
+    render, redirect, reverse, get_object_or_404)
 from django.contrib import messages
-from django.views.generic import ListView
 from django.contrib.auth.decorators import login_required
 from .models import BlogPost, BlogComment
 from .forms import BlogCommentForm, BlogForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
+from django.views.generic import UpdateView, DeleteView
 
 
 def error_403(request, exception):
@@ -33,7 +37,6 @@ def all_blog_posts(request):
     """
 
     blog_posts = BlogPost.objects.all()
-
 
     template = 'blog/blog.html'
 
@@ -153,17 +156,58 @@ def edit_blog(request, blog_post_id):
 
 
 # Delete Blog Post
-@login_required
-def delete_blog_post(request, blog_post_id):
+class Delete_Blog_Post(LoginRequiredMixin, DeleteView):
     """
     Allow an admin user to delete a blog post
     """
-    if request.user.is_superuser:
-        blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
-        blog_post.delete()
-        messages.info(request, 'Blog post deleted!')
-    else:
-        messages.error(request, 'Sorry, you do not have permission for that.')
-        return redirect(reverse('home'))
+    model = BlogPost
+    template_name = 'blog/delete_blog.html'
+    success_url = reverse_lazy('blog')
 
-    return redirect(reverse('blog'))
+    def delete(self, request, *args, **kwargs):
+        """ delete blogpost message """
+        response = super().delete(request, *args, **kwargs)
+        messages.success(
+            self.request, 'The Mocktail blogpost has been deleted sucessfully!')
+        return response
+
+
+# Class from askdevs.com after going to stackoverflow
+class RedirectToPreviousMixin:
+
+    default_redirect = '/'
+
+    def get(self, request, *args, **kwargs):
+        request.session['previous_page'] = request.META.get('HTTP_REFERER', self.default_redirect)
+        return super().get(request, *args, **kwargs)
+
+    def get_success_url(self):
+        return self.request.session['previous_page']
+
+
+# Update Comment
+class Edit_comment(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+    """
+    A view to edit a comment in Mocktails blog
+    """
+    model = BlogComment()
+    form_class = BlogForm
+    template_name = "blog/edit_comment.html"
+    success_message = "Your comment has been updated successfully"
+
+
+# Delete Comment
+class Delete_comment(LoginRequiredMixin, DeleteView):
+    '''
+    View displays the option to delete the comment to the user.
+    '''
+    model = BlogComment()
+    template_name = 'blog/delete_comment.html'
+    success_url = reverse_lazy('blog')
+
+    def delete(self, request, *args, **kwargs):
+        """ delete blog comment success """
+        response = super().delete(request, *args, **kwargs)
+        messages.success(
+            self.request, 'Your Comment has been deleted sucessfully!')
+        return response

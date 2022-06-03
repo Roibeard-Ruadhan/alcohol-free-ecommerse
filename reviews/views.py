@@ -85,7 +85,7 @@ def find_rating_average(reviews):
         return rating_average
 
 
-# Redirect to previous page
+# Redirect to previous page from askdevz.com 
 class RedirectToPreviousMixin:
     """
     A view to Redirect back to page

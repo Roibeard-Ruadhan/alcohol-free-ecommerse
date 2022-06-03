@@ -17,7 +17,7 @@
             <p>Are you sure you want to delete the Mocktail blog titled: "<strong>{{ blog.title }}</strong>"?</p>
             <br>
             <p> Mocktail Content:</p>
-            <div><strong>{{ blog_post.body_text|slice:":200" }}</strong></div>
+            <div><strong>{{ blog_detail.body_text|slice:":200" }}</strong></div>
             <br>
             <button class="btn btn-danger my-2 ml-2" aria-label="delete blog">Delete</button>
             <a class="btn btn-outline-black my-2 ml-2" href="{% url 'blog' %}">Cancel</a>
