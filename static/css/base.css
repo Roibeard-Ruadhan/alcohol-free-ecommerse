@@ -135,7 +135,7 @@ a.category-badge > span.badge:hover {
     background:#fff; 
     clear:left; 
     font:14px Helvetica,Arial,sans-serif;  
-    max-width: fit-content;
+    max-width: max-content;
 }
 
 #mc_embed_signup form {
@@ -213,16 +213,7 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-      max-width: 80%;
-    }
-  }
-
-  /* Allauth form formatting */
+/* ------------------Allauth content */
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -276,7 +267,7 @@ a.category-badge > span.badge:hover {
 	color: #17a2b8; /* text-info */
 }
 
-/* Product Form */
+/* ---------------------------Product Form */
 
 .btn-file {
     position: relative;
@@ -310,57 +301,31 @@ a.category-badge > span.badge:hover {
     background: linear-gradient(to right, #125E8A, #211A1D);
     min-height: 10vh;
     color: #ffc371;
-  }
+}
 
 
-  #button-addon1 {
-    color: #ffc371;
-  }
-  
-  i {
-    color: #ffc371;
-  }
-  
-  .form-control::placeholder {
-    font-size: 0.95rem;
-    color: #aaa;
-    font-style: italic;
-  }
-  
-  .form-control.shadow-0:focus {
-    box-shadow: none;
-  }
+#button-addon1 {
+color: #ffc371;
+}
 
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }
-  
-  /* pad the top a bit when navbar is collapsed on mobile */
-  @media (max-width: 991px) {
-      .header-container {
-          padding-top: 116px;
-      }
-  
-      body {
-          height: calc(100vh - 116px);
-      }
-  }
+i {
+color: #ffc371;
+}
 
-  
-  .display-4.logo-font.text-black {
-    font-size: 2rem;
+.form-control::placeholder {
+font-size: 0.95rem;
+color: #aaa;
+font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+box-shadow: none;
+}
+
+
+
+.display-4.logo-font.text-black {
+font-size: 2rem;
 }
 
 
@@ -418,4 +383,51 @@ a.category-badge > span.badge:hover {
 /* -------------products page */
 .container-review {
     width: unset;
+}
+
+/* -------------------------------- Media Queries */
+
+    /* Slightly larger container on xl screens */
+    @media (min-width: 1200px) {
+        .container {
+        max-width: 80%;
+        }
+    }
+
+      /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+    .display-4 {
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 1.2;
+}}
+
+@media (max-width: 520px) {
+    .display-4 {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.2;
+  }
 }
