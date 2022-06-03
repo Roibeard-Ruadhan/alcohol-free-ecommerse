@@ -135,7 +135,7 @@ a.category-badge > span.badge:hover {
     background:#fff; 
     clear:left; 
     font:14px Helvetica,Arial,sans-serif;  
-    max-width:400px;
+    max-width: fit-content;
 }
 
 #mc_embed_signup form {
