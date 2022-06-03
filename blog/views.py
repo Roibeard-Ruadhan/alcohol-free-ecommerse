@@ -178,7 +178,7 @@ def delete_comment(request, comment_id):
     if request.user.is_superuser:
         comment = BlogComment.objects.get(pk=comment_id)
         comment.delete()
-        messages.info(request, 'Comment deleted!')
+        messages.info(request, 'Comment successfully deleted!')
     else:
         messages.error(request, 'Sorry, you do not have permission for that.')
         return redirect(reverse('home'))

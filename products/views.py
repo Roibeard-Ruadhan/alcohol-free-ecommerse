@@ -164,7 +164,7 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
-# Delete Product
+# Delete Product by the superuser
 class Delete_Product(LoginRequiredMixin, DeleteView):
     '''
     View displays the option to delete the product to the user.
@@ -177,5 +177,5 @@ class Delete_Product(LoginRequiredMixin, DeleteView):
         """ delete product message """
         response = super().delete(request, *args, **kwargs)
         messages.success(
-            self.request, 'The Porduct has been deleted sucessfully!')
+            self.request, 'The Product has been deleted successfully!')
         return response
