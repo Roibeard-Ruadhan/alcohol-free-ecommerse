@@ -29,7 +29,7 @@ body {
 }
 
 .brand:hover {
-    color: #125E8A !important;
+    color: #09334b !important;
 }
 
 .main-logo-link {
@@ -52,10 +52,6 @@ body {
     color: white !important; /* use important to override link colors for <a> elements */
     border: .5px solid black;
 }
-
-/* a:hover, a:active, a:focus, .nav-link {
-    color: #ffc371;
-} */
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
@@ -139,7 +135,7 @@ a.category-badge > span.badge:hover {
     background:#fff; 
     clear:left; 
     font:14px Helvetica,Arial,sans-serif;  
-    width:400px;
+    max-width:400px;
 }
 
 #mc_embed_signup form {
