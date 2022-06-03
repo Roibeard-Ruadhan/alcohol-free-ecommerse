@@ -1,6 +1,7 @@
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.contrib import messages
+from django.views.generic import ListView
 from django.contrib.auth.decorators import login_required
 from .models import BlogPost, BlogComment
 from .forms import BlogCommentForm, BlogForm
@@ -32,6 +33,7 @@ def all_blog_posts(request):
     """
 
     blog_posts = BlogPost.objects.all()
+
 
     template = 'blog/blog.html'
 
