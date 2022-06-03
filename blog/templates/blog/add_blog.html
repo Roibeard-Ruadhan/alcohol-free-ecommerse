@@ -14,7 +14,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container text-white">
     <div class="row">
         <div class="col-12">
             <h2 class="text-center">Product Management</h2>
@@ -30,9 +30,9 @@
                 {% csrf_token %}
                 {{ form|crispy }}
                 <div class="text-center">
-                    <button class="btn btn-blue" type="submit" >Create</button>
+                    <button class="btn btn-black" type="submit" >Create</button>
                     <a href="{% url 'blog' %}">
-                        <button class="btn btn-outline-grey" type="button">Cancel</button>
+                        <button class="btn btn-black" type="button">Cancel</button>
                     </a>
                 </div>
             </form>

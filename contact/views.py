@@ -2,6 +2,7 @@ from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.contrib import messages
 from .forms import ContactForm
+from .models import Contact_message
 
 
 def error_403(request, exception):
@@ -23,7 +24,7 @@ def error_500(request, *args, **argv):
     return render(request, '500.html', status=500)
 
 
-def contact(request):
+def Contact(request):
     """
     A view to return the contact page
     """
