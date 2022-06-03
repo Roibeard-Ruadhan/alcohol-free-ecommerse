@@ -17,6 +17,7 @@
 {% endblock %}
 
 {% block content %}
+
     <div class="container">
         <div class="row">
             <!-- Page Heading -->
@@ -26,7 +27,11 @@
                 </p>
             </div>
         </div>
-        
+        {% if request.user.is_superuser %}
+        <div class="edit-delete-links ms-3 text-center">
+            <a href="{% url 'add_blog' %}" class="edit-link info-text"><strong>Add Mocktail Blog</strong></a>
+        </div>
+        {% endif %}
         <!-- Blog Posts -->
         <div class="row justify-content-center">
             {% for blog_post in blog_posts %}
