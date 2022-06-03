@@ -414,3 +414,8 @@ a.category-badge > span.badge:hover {
 .increment-qty, .decrement-qty {
     padding: .355rem .355rem !important;
 }
+
+/* -------------products page */
+.container-review {
+    width: unset;
+}
