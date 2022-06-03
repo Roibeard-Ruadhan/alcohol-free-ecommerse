@@ -7,6 +7,9 @@ from django.db.models import Q
 from reviews.views import submit_review, find_rating_average, UpdateReview, DeleteReview
 from reviews.form import ReviewForm
 from reviews.models import Reviews
+from django.views.generic import UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 from django.db.models.functions import Lower
 
 from .models import Product, Category
@@ -161,14 +164,18 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
-@login_required
-def delete_product(request, product_id):
-    """ Delete a product from the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+# Delete Product
+class Delete_Product(LoginRequiredMixin, DeleteView):
+    '''
+    View displays the option to delete the product to the user.
+    '''
+    model = Product
+    template_name = 'products/delete_product.html'
+    success_url = reverse_lazy('products')
 
-    product = get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
+    def delete(self, request, *args, **kwargs):
+        """ delete product message """
+        response = super().delete(request, *args, **kwargs)
+        messages.success(
+            self.request, 'The Porduct has been deleted sucessfully!')
+        return response
