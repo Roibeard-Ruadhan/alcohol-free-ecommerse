@@ -117,14 +117,17 @@
                                         Review:
                                         <textarea name="review" rows="4" class="form-control"></textarea>
                                         <br>
+                                        {% if user.is_authenticated %}
                                         <input type="submit" value="Submit Review" class="btn btn-black">
-                                        <p>You must be logged in to post a review: <a href="{% url 'account_login' %}">Login</a></p>
+                                        {% else %}
+                                            <p>You must be logged in to post a review: <a href="{% url 'account_login' %}">Login</a></p>
+                                        {% endif %}
                                     </div>
                                 </form>
                             </div> 
                         </div>
                         <div class="row">
-                            <div class="col-12>
+                            <div class="col-12">
                                 <h3>Customer Reviews</h3>
                                 {% for review in reviews %}
                                     <div class="border">
