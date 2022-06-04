@@ -186,7 +186,7 @@ class RedirectToPreviousMixin:
 
 
 # Update Comment
-class Edit_comment(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+class EditComment(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     """
     A view to edit a comment in Mocktails blog
     """
@@ -197,7 +197,7 @@ class Edit_comment(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessageMi
 
 
 # Delete Comment
-class Delete_comment(LoginRequiredMixin, DeleteView):
+class DeleteComment(LoginRequiredMixin, DeleteView):
     '''
     View displays the option to delete the comment to the user.
     '''

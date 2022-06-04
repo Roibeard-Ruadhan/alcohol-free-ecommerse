@@ -9,10 +9,10 @@ urlpatterns = [
     path('delete_blog/<pk>/',
          views.Delete_Blog_Post.as_view(),
          name='delete_blog'),
-    path('edit_comment/<pk>/', views.Edit_comment.as_view(),
+    path('edit_comment/<pk>/', views.EditComment.as_view(),
          name='update_comment'),
     path(
-         'delete_comment/<int:comment_id>/',
-         views.Delete_comment,
+         'delete_comment/<pk>/',
+         views.DeleteComment,
          name='delete_comment'),
 ]

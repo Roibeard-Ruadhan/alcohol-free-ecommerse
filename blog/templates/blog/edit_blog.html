@@ -13,10 +13,10 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container text-white">
         <!-- Page Heading -->
         <div class="row">
-            <div class="col page-heading">
+            <div class="col page-heading text-center">
                 <h1 class="heading"> Mocktail Blog Management</h1>
             </div>
         </div>
@@ -24,7 +24,7 @@
 
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2">
-                <h3 class='sub-heading'>Edit Moctail Post</h3>
+                <h3 class='sub-heading text-center'>Edit Moctail Post</h3>
                 <div>
                     <!-- Edit Blog Form -->
                     <form action="{% url 'edit_blog' blog_post.id %}" method="POST" class="form" enctype="multipart/form-data">
@@ -38,11 +38,11 @@
                         {% endfor %}
                         <div class="text-end">
                             <!-- Cancel Button -->
-                            <a href="{% url 'blog' %}" class="btn button no-bg-btn">
+                            <a href="{% url 'blog' %}" class="button btn btn btn-black">
                                 <span class="p-text">Cancel</span>
                             </a>
                             <!-- Submit Button -->
-                            <button id="submit-button" class="btn button dark-bg-btn">
+                            <button id="submit-button" class="button btn btn btn-black">
                                 <span class="p-text text-bold">Update Mocktail Post</span>
                             </button>
                         </div>
