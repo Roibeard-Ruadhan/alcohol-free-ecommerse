@@ -73,7 +73,7 @@
                             </div>
                             <div class="card-body comment-body position-center">
                                 <div class="blog-body-tex">{{ comment.comment | linebreaks }}</div>
-                                {% if request.user.is_superuser %}
+                                {% if comment.user == request.user or request.user.is_superuser %}
                                     <a href="{% url 'update_comment' comment.id %}" class="edit-link info-text">Edit</a> |
                                     <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>
                                 {% endif %}

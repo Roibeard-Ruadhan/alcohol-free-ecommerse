@@ -2,7 +2,7 @@ from django.shortcuts import (
     render, redirect, reverse, get_object_or_404)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import BlogPost, BlogComment
+from .models import BlogPost, BlogComment, EditComment
 from .forms import BlogCommentForm, BlogForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
@@ -186,11 +186,11 @@ class RedirectToPreviousMixin:
 
 
 # Update Comment
-class EditComment(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+class EditCommentView(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     """
     A view to edit a comment in Mocktails blog
     """
-    model = BlogComment()
+    model = EditComment
     form_class = BlogForm
     template_name = "blog/edit_comment.html"
     success_message = "Your comment has been updated successfully"
@@ -201,7 +201,7 @@ class DeleteComment(LoginRequiredMixin, DeleteView):
     '''
     View displays the option to delete the comment to the user.
     '''
-    model = BlogComment()
+    model = BlogComment
     template_name = 'blog/delete_comment.html'
     success_url = reverse_lazy('blog')
 
