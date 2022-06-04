@@ -15,5 +15,8 @@ class Reviews(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     status = models.BooleanField(default=True)
 
+    class Meta:
+        verbose_name_plural = 'Reviews'
+
     def __str__(self):
         return self.subject
