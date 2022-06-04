@@ -35,7 +35,6 @@ def Contact(request):
             contact_form.save()
             messages.success(request, 'Message Sent!')
             return redirect(reverse('contact'))
-
         else:
             messages.error(request, 'Please check your form is valid.\
                 Message send failed.')

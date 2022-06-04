@@ -26,12 +26,14 @@ class BlogCommentAdmin(admin.ModelAdmin):
     list_display = (
         'user',
         'blog_post',
+        'subject',
         'comment',
         'created_on',
     )
 
     search_fields = (
         'user',
+        'subject',
         'comment',
     )
 

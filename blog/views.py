@@ -55,6 +55,7 @@ def blog_detail(request, blog_post_id):
     """
     blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
     comments = blog_post.comments.all()
+    subject = None
     new_comment = None
 
     if request.method == 'POST':
@@ -76,6 +77,7 @@ def blog_detail(request, blog_post_id):
 
     context = {
         'blog_post': blog_post,
+        'subject': subject,
         'comments': comments,
         'comment_form': comment_form,
         'new_comment': new_comment,

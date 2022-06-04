@@ -39,6 +39,7 @@ class BlogComment(models.Model):
     subject = models.CharField(max_length=100, blank=True)                              
     comment = models.TextField(max_length=1000, blank=False, null=True)
     created_on = models.DateTimeField(auto_now_add=True, blank=True)
+    published = models.BooleanField(default=False)
 
     def __str__(self):
         return f"Comment on {self.blog_post.title} by {self.user}"
@@ -53,4 +54,4 @@ class EditComment(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.user
+        return self.subject

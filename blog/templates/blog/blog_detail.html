@@ -61,13 +61,13 @@
         <div class="row text-black comments-container">
             <div class="col-12 text-white">
                 <span class="sub-heading btn btn-black">Comments</span>
-                <span class="p-text text-end ms-auto">{{ comments.count }}</span>
+                <span class="p-text text-end ms-auto btn btn-black">{{ comments.count }}</span>
             </div>
             {% for comment in comments %}   
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
-                            <div class="card-header comment-header">
+                            <div class="card-header comment-header text-white">
                                 <p class="p-text text-bold">{{ comment.user }}'s Comment</p>
                                 <p class="text-muted text-end">{{ comment.created_on }}</p>
                             </div>
@@ -94,6 +94,7 @@
                         {% else %}
                             <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
                                 {% csrf_token %}
+                                <br>
                                 {{ comment_form|crispy }}
                                 <button class="button btn btn btn-black text-white" type="submit">Add Comment</button>
                             </form>
