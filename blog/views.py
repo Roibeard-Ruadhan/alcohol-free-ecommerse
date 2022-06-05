@@ -54,7 +54,7 @@ def blog_detail(request, blog_post_id):
     and to allow logged in users to leave a comment.
     """
     blog_post = get_object_or_404(BlogPost, pk=blog_post_id)
-    comments = blog_post.comments.all()
+    comment = blog_post.comments.all()
     subject = None
     new_comment = None
 
@@ -78,7 +78,7 @@ def blog_detail(request, blog_post_id):
     context = {
         'blog_post': blog_post,
         'subject': subject,
-        'comments': comments,
+        'comment': comment,
         'comment_form': comment_form,
         'new_comment': new_comment,
     }
@@ -196,7 +196,6 @@ class EditCommentView(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessag
     form_class = BlogCommentForm
     template_name = "blog/update_comment.html"
     success_message = "Your comment has been updated successfully"
-
 
 
 # Delete Comment

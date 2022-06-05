@@ -20,6 +20,11 @@ p.p-text {
     left: 0;
     width: 100%;
 }
+
+.blog {
+    margin: 3rem;
+}
+
 /*--------------------- Back to top button */
 .btt-button {
     height: 42px;

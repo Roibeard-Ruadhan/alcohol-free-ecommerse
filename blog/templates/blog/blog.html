@@ -37,7 +37,7 @@
             {% for blog_post in blog_posts %}
                 <div class="col-12">
                     <!-- Bootstrap Card -->
-                    <div class="card blog-card">
+                    <div class="card blog">
                         <div class="row g-0">
                             <!-- Blog image -->
                             <div class="col-md-5">
@@ -53,7 +53,7 @@
                             </div>
                             <!-- Blog Details -->
                             <div class="col-md-7">
-                                <div class="card-body">
+                                <div class="card-body blog-post">
                                     <p class="blog-info sub-heading mt-0">{{ blog_post.title }}</p>
                                     <p class="blog-info p-text ms-3">{{ blog_post.body_text|slice:":200" }}</p>
                                     <div class="blog-detail-wrapper">
@@ -79,16 +79,16 @@
                     </div>
                 </div>
             {% endfor %}
-            <nav aria-label="Page navigation">
-                <ul class="pagination justify-content-center">
-                    {% if page_obj.has_previous %}
-                    <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% if is_paginated %}
+                <div class="page-links">
+                    {% if page.has_previous %}
+                    <a href="{% url 'blog' %}?page={{ page.previous_page_number }}" class="fa fa-angle-double-left"></a>">Previous Page</a>
                     {% endif %}
-                    {% if page_obj.has_next %}
-                    <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+                    {% if page.has_next %}
+                    <a href="{% url 'blog' %}?page={{ page.next_page_number }}" class="fa fa-angle-double-right"></a>>Next Page</a>
                     {% endif %}
-                </ul>
-            </nav>
+                </div>
+            {% endif %}
         </div>                   
     </div>
     <!-- Back to top button -->

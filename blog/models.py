@@ -16,6 +16,8 @@ class BlogPost(models.Model):
     title = models.CharField(max_length=200, unique=True)
     image = models.ImageField(null=True, blank=True)
     body_text = models.TextField(default=None, blank=False, null=True)
+    subject = models.CharField(max_length=100, blank=True)
+    comment = models.TextField(max_length=1000, blank=False, null=True)
     created_on = models.DateTimeField(auto_now_add=True, blank=True)
 
     def __str__(self):
@@ -36,11 +38,10 @@ class BlogComment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     blog_post = models.ForeignKey(BlogPost, on_delete=models.CASCADE,
                                   related_name='comments')
-    subject = models.CharField(max_length=100, blank=True)                              
+    subject = models.CharField(max_length=100, blank=True)
     comment = models.TextField(max_length=1000, blank=False, null=True)
     created_on = models.DateTimeField(auto_now_add=True, blank=True)
     published = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Comment on {self.blog_post.subject} by {self.user}"
-
+        return f"Comment on {self.subject} by {self.user}"
