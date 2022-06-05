@@ -29,6 +29,7 @@ class BlogCommentAdmin(admin.ModelAdmin):
         'blog_post',
         'subject',
         'comment',
+        'published',
         'created_on',
     )
 
@@ -52,6 +53,7 @@ class ReviewsAdmin(admin.ModelAdmin):
         'user',
         'subject',
         'review',
+        'published',
         'created_on',
     )
 
