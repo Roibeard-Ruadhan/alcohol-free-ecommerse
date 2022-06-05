@@ -13,10 +13,11 @@ class Reviews(models.Model):
     rating = models.FloatField()
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
+    published = models.BooleanField(default=False)
     status = models.BooleanField(default=True)
 
     class Meta:
         verbose_name_plural = 'Reviews'
 
     def __str__(self):
-        return self.subject
+        return f"Comment on {self.subject} by {self.user}"

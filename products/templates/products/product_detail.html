@@ -133,8 +133,10 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
+                                <div class="card">
                                 <h3>Customer Reviews</h3>
                                 {% for review in reviews %}
+                                {% if review.published == True %} 
                                     <div class="border">
                                         <hr>
                                         <p class="font-weight-bold">{{ review.subject }} Posted by: {{ review.user }} on {{ review.created_on }}</p>
@@ -146,7 +148,9 @@
                                         {%endif%}
                                         <hr>
                                     </div>
+                                {% endif %}
                                 {% endfor %}
+                                </div>
                             </div>
                         </div>
                     </div>
