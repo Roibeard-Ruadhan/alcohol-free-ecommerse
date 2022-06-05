@@ -13,13 +13,6 @@ class BlogCommentForm(forms.ModelForm):
 
         fields = ('subject', 'comment',)
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
-        self.fields['comment'].widget.attrs[
-            'placeholder'] = 'Leave your comment here..'
-        self.fields['subject'].widget.attrs['placeholder'] = 'Comment Subject'
-        self.fields['comment'].widget.attrs['placeholder'] = 'Comment Content'
 
 
 class BlogForm(forms.ModelForm):

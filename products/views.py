@@ -16,19 +16,19 @@ from .models import Product, Category
 from .forms import ProductForm
 
 
-def error_403(request, exception):
+def handler_403(request, exception):
     '''403 error view'''
     return render(request, '403.html', status=403)
 
 
-def error_404(request, exception):
+def handler_404(request, exception):
     '''
     A 404 error handling view
     '''
     return render(request, '404.html', status=404)
 
 
-def error_500(request, *args, **argv):
+def handler_500(request, *args, **argv):
     '''
     A 500 error handling view
     '''

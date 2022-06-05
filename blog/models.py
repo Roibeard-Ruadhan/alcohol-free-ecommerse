@@ -42,16 +42,5 @@ class BlogComment(models.Model):
     published = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Comment on {self.blog_post.title} by {self.user}"
+        return f"Comment on {self.blog_post.subject} by {self.user}"
 
-
-class EditComment(models.Model):
-    """ This model is for the product review and rating """
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    subject = models.CharField(max_length=100, blank=True)
-    comment = models.TextField(max_length=500, blank=True)
-    created_on = models.DateTimeField(auto_now_add=True)
-    updated_on = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.subject

@@ -2,7 +2,7 @@ from django.shortcuts import (
     render, redirect, reverse, get_object_or_404)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import BlogPost, BlogComment, EditComment
+from .models import BlogPost, BlogComment
 from .forms import BlogCommentForm, BlogForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
@@ -192,9 +192,9 @@ class EditCommentView(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessag
     """
     A view to edit a comment in Mocktails blog
     """
-    model = EditComment
+    model = BlogComment
     form_class = BlogForm
-    template_name = "blog/edit_comment.html"
+    template_name = "blog/update_comment.html"
     success_message = "Your comment has been updated successfully"
 
 

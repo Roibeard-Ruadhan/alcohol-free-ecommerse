@@ -63,7 +63,8 @@
                 <span class="sub-heading btn btn-black">Comments</span>
                 <span class="p-text text-end ms-auto btn btn-black">{{ comments.count }}</span>
             </div>
-            {% for comment in comments %}   
+            {% for comment in comments %}  
+            {% if comment.published == True %} 
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -81,6 +82,7 @@
                         </div>
                     </div>
                 </div>
+                {% endif %}
             {% endfor %}
              <!-- Comment Form -->
             <div class="comment-form-container">

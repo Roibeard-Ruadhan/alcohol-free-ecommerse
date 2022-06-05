@@ -9,7 +9,7 @@ urlpatterns = [
     path('delete_blog/<pk>/',
          views.Delete_Blog_Post.as_view(),
          name='delete_blog'),
-    path('edit_comment/<pk>/', views.EditCommentView.as_view(),
+    path('update_comment/<int:pk>/', views.EditCommentView.as_view(),
          name='update_comment'),
     path(
          'delete_comment/<pk>/',
