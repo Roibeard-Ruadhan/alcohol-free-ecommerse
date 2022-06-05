@@ -193,9 +193,10 @@ class EditCommentView(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessag
     A view to edit a comment in Mocktails blog
     """
     model = BlogComment
-    form_class = BlogForm
+    form_class = BlogCommentForm
     template_name = "blog/update_comment.html"
     success_message = "Your comment has been updated successfully"
+
 
 
 # Delete Comment
