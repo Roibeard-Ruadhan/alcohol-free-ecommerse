@@ -433,6 +433,49 @@ label:hover ~ input:checked ~ label {
     color: #cc9000;
 }
 
+/* -----------------Blog page */
+.heading {
+    justify-content: center;
+    text-align: center;
+}
+
+p.p-text {
+    text-align: center;
+}
+
+.background-cover {
+    background: #ffffff;
+    opacity: .9;
+    padding: 2rem;
+    margin:1rem;
+    width: 92%;
+}
+
+
+.blog-image-container {
+   
+}
+
+.blog-image {
+    
+}
+
+.blog-details-container {
+    margin: 2rem;
+}
+
+.comments-container {
+    
+}
+
+.comment-body {
+    margin-bottom: 2rem;
+}
+
+.blog {
+    margin: 3rem;
+}
+
 /* -------------------------------- Media Queries */
 
     /* Slightly larger container on xl screens */
