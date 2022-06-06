@@ -182,7 +182,7 @@ During the initial strategy planning, the opportunities of the site were determi
 
 ### **Fonts**
 
-The logo was designed by simply using the font [Monoton](https://fonts.google.com/specimen/Monoton) via [Google Fonts](https://fonts.google.com/)
+The logo was designed by simply using the font [Monoton](https://fonts.google.com/specimen/Monoton) via [Google Fonts](https://fonts.google.com/). When the font weight is set below a certain number it added the effect I was looking for.
 For the rest of the project I used [Convergence](https://fonts.google.com/specimen/Convergence) which brings the subtlety of a bar atmosphere
 
 
@@ -195,8 +195,10 @@ I originally started with Saphire Blue color as pointed out below & tested it wi
  ![Colour Pallette](readme/assets/readme-images/coolors-color-pallette.jpg)
 
 ### **Imagery**
+All the product images were sourced using google images, right clicking & saving image as. When I had received the images I was able to edit the size(assist alignment), graphic formats to png & reduce the capacity using [Bulkresizephoto's](https://bulkresizephotos.com/en). All you need to do is drag & drop, pick your preferred transition options & the images will land in your downloads folder wrappeed. Unwrap the images & transfer them onto gitpod. When they are on gitpod & tested on the browser they can now be sent to AWS S3 bucket & stored in the backend. This should continue to function as long as there are no changes to the name on the frontend.  
 
-
+- The home page hero image is darkened using linear-gradient to 
+- No image was required for the logo as it was completed using the Monoton font, when set a certain font weight, with one word(shop) inside a 'strong' tag, it gives a design affect.  
 
 ### **Wireframes**
 
