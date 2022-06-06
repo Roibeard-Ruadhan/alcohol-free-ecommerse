@@ -12,7 +12,7 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 - [**UX (User Experience)**](#ux-user-experience)
   - [**User Stories**](#user-stories)
   - [**Site Owner Goals**](#site-owner-goals)
-- [**Design Choices**](#design-choices)
+- [**Scope Plan**](#scope-plan)
   - [**Fonts**](#fonts)
   - [**Colours**](#colours)
   - [**Imagery**](#imagery)
@@ -105,7 +105,6 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
     * I want to be able to add a new Mocktail blog via the browser when logged in or in the admin.
  
 
-
 ### **Site Owner Goals** 
 
 
@@ -113,7 +112,66 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 [Back to contents](#contents)
 
 
-## **Design Choices**
+
+## **Scope-Plan**
+
+### **Existing Features**
+
+During the initial strategy planning, the opportunities of the site were determined and values were given according to their imporance and viability ranking between 1 and 5. Below are the list of features that were valued important and viable at this stage. The remaining features have been recorded in Features Left to Implement.
+
+#### Design
+- Responsive design
+- Easy navigation throughout, nav links clearly labelled or icons used in navbar. Sidenav used for smaller devices.
+- Site logo - returns user to the home page
+- Nav link options will change depending on status of user eg. unregistered, registered or admin
+- On the home page a selection of photos will be displayed that link to different sections of the site, aimed to promote certain products or lines that are in season
+- On larger screens a hover effect over some images will display an image and call to action button. On smaller screens this will be displayed at all times.
+
+#### Products
+- Users are able to search and filter products depending on what they are looking for
+- Users can add products to shopping basket
+- Users can update or delete products from shopping basket
+- Users can securely purchase product(s) from the site
+- Order confirmation will be displayed to user and subsequent confirmation email sent.
+- Registered users can leave reviews on products
+- Registered users can edit or delete their reviews
+
+#### Register, Login and Logout
+- Users are able to register for an account
+- Registered users can login and logout of account
+- Users will receive confirmation emails for registering, order summary and contact enquiries.
+- Registered users can change their password if forgotten
+- Registered users can view profile containing personal information and order history
+- Registered users can save and update personal information on their profile
+
+#### Admin
+- Admin users can add, update and delete products
+- Admin users can create new categories
+- Admin users can add, update and delete blog posts
+- Admin users can delete user comments on blog posts
+- Admin users can delete user reviews on products
+- Admin users can delete users
+- Admin users can make other users admin
+- Admin users are notified by email when a user fills out the contact form
+
+#### Other
+- Users can contact site owner through contact form
+- If user is logged in, contact form will pre-populate
+- Social media links displayed
+- Back to top button in footer, to prevent unnecessary scrolling
+- All users can view blog posts, if logged in users can leave comments
+- Deletion confirmation before anything is deleted, to prevent accidental deletion
+- Cancel buttons on all edit pages, incase user changes their mind
+
+
+
+### **Features Left to Implement**
+
+- A wishlist section for logged in users to save products for future purchase
+- Expand further product lines and product ranges
+- To have a list of features displayed on the product detail page
+- A rating option on product reviews that generated average ratings that would be displayed on the product information
+- Out of stock notifications on product detail when a product had run out
 
 
 ### **Fonts**
@@ -122,7 +180,11 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 
 
 ### **Colours**
+I originally started with Saphire Blue color as pointed out below & tested it with various colours on [coolors](https://coolors.co/).
 
+ ![Colour Pallette Blue](readme/assets/readme-images/colour-scheme.jpg)
+ After several tests I decided to go with Mellow Apricot as I felt it complimented both Saphire Blue along with Xiketic. 
+ ![Colour Pallette](readme/assets/readme-images/coolors-color-pallette.jpg)
 
 ### **Imagery**
 
