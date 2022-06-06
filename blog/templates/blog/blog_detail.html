@@ -76,15 +76,15 @@
     </div>
 </div>
 <!-- Comments -->
-<div class="row text-black">
+<div class="text-black text-bold">
     <div class="col-12 text-white">
-        <span class="sub-heading btn btn-black">Comments</span>
-        <span class="p-text text-end ms-auto btn btn-black">{{ comment.count }}</span>
+        <span class="sub-heading">Comments</span>
+        <span class="p-text ms-auto">{{ comment.count }}</span>
     </div>
     {% for comment in comment %}  
     {% if comment.published == True %} 
     <div>
-        <div class="row">
+        <div>
             <div class="col-10">
                 <div class="card comment-body">
                     <div class="card-header comment-header text-black">
