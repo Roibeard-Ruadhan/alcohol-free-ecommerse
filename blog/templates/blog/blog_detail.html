@@ -14,99 +14,101 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        
-        <div class="row">
-            <!-- Page Heading -->
-            <div class="col page-heading text-white">
-                <h1 class="heading">{{ blog_post.title }}</h1>
-            </div>
-        </div>
+<div class="container">
 
-        <div class="row">
-            <div class="col-12">
-                <div class="blog-image-container blog-image text-center">
-                    {% if blog_post.image %}
-                        <a href="{{ blog_post.image.url }}" target="_blank"  rel="noopener">
-                            <img src="{{ blog_post.image.url }}" alt="{{ blog_post.title }}" class="img-fluid">
-                        </a>
-                    {% else %}
-                        <a href="{{ MEDIA_URL }}noimage.png" target="_blank"  rel="noopener">
-                            <img src="{{ MEDIA_URL }}noimage.png" alt="{{ blog_post.title }}" class="img-fluid">
-                        </a>
-                    {% endif %}
-                </div>
-            </div>
-            
-            <div class="col-12">
-                <div class="blog-details-container background-cover">
-                    <div class="blog-body-text text-black">{{ blog_post.body_text | linebreaks }}</div>
-                    <p class="blog-info text-white mt-4 text-end">{{ blog_post.user }} | {{ blog_post.created_on}}</p>
-                    <!-- Blog edit/delete links -->
-                    {% if request.user.is_superuser %}
-                        <div class="edit-delete-links text-whites text-end">
-                            <a href="{% url 'edit_blog' blog_post.id %}" class="edit-link info-text">Edit</a>
-                            <span> | </span>
-                            <a href="{% url 'delete_blog' blog_post.id %}" class="delete-link error-text">Delete</a>
-                        </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>  
-        <!-- Comment Form -->
-        <div class="">
-            <div class="row">
-                <div class="col-12 text-white">
-                    <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
-                        {% csrf_token %}
-                        <h5>Write Your Review</h5>
-                        <br>
-                        {{ comment_form|crispy }}
-                    {% if user.is_authenticated %}
-                        <button class="button btn btn btn-black text-white" type="submit">Add Comment</button>
-                    </form>
-                    {% else %}
-                    <p class="p-text text-white">Please
-                        <a class="info-text p-text" href="{% url 'account_login' %}"> Login </a> or
-                        <a class="info-text p-text" href="{% url 'account_signup' %}">Signup</a>
-                        to add a comment.</p>
-                    {% endif %}
-                </div>
-            </div>
+    <div class="row">
+        <!-- Page Heading -->
+        <div class="col page-heading text-white">
+            <h1 class="heading">{{ blog_post.title }}</h1>
         </div>
     </div>
-    <!-- Comments -->
-    <div class="row text-black comments-container">
-        <div class="col-12 text-white">
-            <span class="sub-heading btn btn-black">Comments</span>
-            <span class="p-text text-end ms-auto btn btn-black">{{ comment.count }}</span>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="blog-image-container blog-image text-center">
+                {% if blog_post.image %}
+                    <a href="{{ blog_post.image.url }}" target="_blank"  rel="noopener">
+                        <img src="{{ blog_post.image.url }}" alt="{{ blog_post.title }}" class="img-fluid">
+                    </a>
+                {% else %}
+                    <a href="{{ MEDIA_URL }}noimage.png" target="_blank"  rel="noopener">
+                        <img src="{{ MEDIA_URL }}noimage.png" alt="{{ blog_post.title }}" class="img-fluid">
+                    </a>
+                {% endif %}
+            </div>
         </div>
-        {% for comment in comment %}  
-        {% if comment.published == True %} 
-        <div class="container">
-            <div class="row">
-                <div class="col-10">
-                    <div class="card comment-body">
-                        <div class="card-header comment-header text-black">
-                            <p class="p-text text-bold border">{{ comment.user }}</p>
-                            <p class="p-text text-bold">{{ comment.subject }} Comment</p>
-                            <p class="text-muted text-end">{{ comment.created_on }}</p>
-                        </div>
-                        <div class="card-body comment-body position-center">
-                            <div class="blog-body-text">{{ comment.comment | linebreaks }}</div>
-                            <p class="text-muted text-end">{{ comment.created_on }}</p>
-                            {% if comment.user == request.user or request.user.is_superuser %}
-                                <a href="{% url 'update_comment' comment.id %}" class="edit-link info-text">Edit</a> |
-                                <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>
-                            {% endif %}
-                        </div>  
+        
+        <div class="col-12">
+            <div class="blog-details-container background-cover">
+                <div class="blog-body-text text-black">{{ blog_post.body_text | linebreaks }}</div>
+                <p class="blog-info text-white mt-4 text-end">{{ blog_post.user }} | {{ blog_post.created_on}}</p>
+                <!-- Blog edit/delete links -->
+                {% if request.user.is_superuser %}
+                    <div class="edit-delete-links text-whites text-end">
+                        <a href="{% url 'edit_blog' blog_post.id %}" class="edit-link info-text">Edit</a>
+                        <span> | </span>
+                        <a href="{% url 'delete_blog' blog_post.id %}" class="delete-link error-text">Delete</a>
                     </div>
-                </div>
+                {% endif %}
             </div>
-        {% endif %}
-        {% endfor %}
+        </div>
+    </div>  
+    <!-- Comment Form -->
+    <div class="">
+        <div class="row">
+            <div class="col-12 text-white">
+                <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
+                    {% csrf_token %}
+                    <h5>Write Your Review</h5>
+                    <br>
+                    {{ comment_form|crispy }}
+                {% if user.is_authenticated %}
+                    <button class="button btn btn btn-black text-white" type="submit">Add Comment</button>
+                </form>
+                {% else %}
+                <p class="p-text text-white">Please
+                    <a class="info-text p-text" href="{% url 'account_login' %}"> Login </a> or
+                    <a class="info-text p-text" href="{% url 'account_signup' %}">Signup</a>
+                    to add a comment.</p>
+                {% endif %}
+            </div>
         </div>
     </div>
+</div>
+<!-- Comments -->
+<div class="row text-black">
+    <div class="col-12 text-white">
+        <span class="sub-heading btn btn-black">Comments</span>
+        <span class="p-text text-end ms-auto btn btn-black">{{ comment.count }}</span>
+    </div>
+    {% for comment in comment %}  
+    {% if comment.published == True %} 
+    <div>
+        <div class="row">
+            <div class="col-10">
+                <div class="card comment-body">
+                    <div class="card-header comment-header text-black">
+                        <p class="p-text text-bold border">{{ comment.user }}</p>
+                        <p class="p-text text-bold">{{ comment.subject }} Comment</p>
+                        <p class="text-muted text-end">{{ comment.created_on }}</p>
+                    </div>
+                    <div class="card-body comment-body position-center">
+                        <div class="blog-body-text">{{ comment.comment | linebreaks }}</div>
+                        <p class="text-muted text-end">{{ comment.created_on }}</p>
+                        {% if comment.user == request.user or request.user.is_superuser %}
+                            <a href="{% url 'update_comment' comment.id %}" class="edit-link info-text">Edit</a> |
+                            <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>
+                        {% endif %}
+                    </div>  
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% endfor %}
+    </div>
+</div>
+
+
 
     
     <!-- Back to top button -->
