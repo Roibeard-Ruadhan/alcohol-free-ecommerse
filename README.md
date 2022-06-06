@@ -23,8 +23,7 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
   - [**Libraries**](#libraries)
   - [**Tools**](#tools)
 - [**Scope Plan**](#scope-plan)
-  - [**Features**](#features)
-  - [**Features Implemented**](#features-implemented)
+  - [****Existing Features****](#existing-features)
   - [**Future Features**](#future-features)
   - [**Responsive Design**](#responsive-design)
 - [**Version Control**](#version-control)
@@ -183,7 +182,8 @@ During the initial strategy planning, the opportunities of the site were determi
 
 ### **Fonts**
 
-
+The logo was designed by simply using the font [Monoton](https://fonts.google.com/specimen/Monoton) via [Google Fonts](https://fonts.google.com/)
+For the rest of the project I used [Convergence](https://fonts.google.com/specimen/Convergence) which brings the subtlety of a bar atmosphere
 
 
 ### **Colours**
