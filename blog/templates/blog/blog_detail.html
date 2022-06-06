@@ -55,78 +55,62 @@
                     {% endif %}
                 </div>
             </div>
-        </div>
-
-        <!-- Comments -->
-        <div class="row text-black comments-container">
-            <div class="col-12 text-white">
-                <span class="sub-heading btn btn-black">Comments</span>
-                <span class="p-text text-end ms-auto btn btn-black">{{ comment.count }}</span>
-            </div>
-            {% for comment in comment %}  
-            {% if comment.published == True %} 
-            <div></div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-header comment-header text-black">
-                                <p class="p-text text-bold border">{{ comment.user }}</p>
-                                <p class="p-text text-bold">{{ comment.subject }} Comment</p>
-                                <p class="text-muted text-end">{{ comment.created_on }}</p>
-                            </div>
-                            <div class="card-body comment-body position-center">
-                                <div class="blog-body-tex">{{ comment.comment | linebreaks }}</div>
-                                <p class="text-muted text-end">{{ comment.created_on }}</p>
-                                {% if comment.user == request.user or request.user.is_superuser %}
-                                    <a href="{% url 'update_comment' comment.id %}" class="edit-link info-text">Edit</a> |
-                                    <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>
-                                {% endif %}
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-            {% endif %}
-            {% endfor %}
-             <!-- Comment Form -->
-            <div class="">
-                <div class="row">
-                    <div class="col-12">
-                        {% if request.user.is_anonymous %}
-                            <p class="p-text text-white">Please
-                                <a class="info-text p-text" href="{% url 'account_login' %}"> Login </a> or
-                                <a class="info-text p-text" href="{% url 'account_signup' %}">Signup</a>
-                                to add a comment.</p>
-                        {% else %}
-                            <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
-                                {% csrf_token %}
-                                <br>
-                                {{ comment_form|crispy }}
-                                <button class="button btn btn btn-black text-white" type="submit">Add Comment</button>
-                            </form>
-                        {% endif %}
-                    </div>
+        </div>  
+        <!-- Comment Form -->
+        <div class="">
+            <div class="row">
+                <div class="col-12 text-white">
+                    <form id="comment-form" method="POST" action="{% url 'blog_detail' blog_post.id %}">
+                        {% csrf_token %}
+                        <h5>Write Your Review</h5>
+                        <br>
+                        {{ comment_form|crispy }}
+                    {% if user.is_authenticated %}
+                        <button class="button btn btn btn-black text-white" type="submit">Add Comment</button>
+                    </form>
+                    {% else %}
+                    <p class="p-text text-white">Please
+                        <a class="info-text p-text" href="{% url 'account_login' %}"> Login </a> or
+                        <a class="info-text p-text" href="{% url 'account_signup' %}">Signup</a>
+                        to add a comment.</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-review">
-        <div class="row">
-            <div class="col-sm col-md-8 p-5">
-                <form action="{% url 'blog_detail' blog_post.id %}" method="POST">
-                    {% csrf_token %}
-                    <h5>Write Your Review</h5>
-                    <br>
-                    Review Title:
-                    <input type="text" class="form-control" name="subject">
-                    <br>
-                    Review:
-                    <textarea name="review" rows="4" class="form-control"></textarea>
-                    <br>
-                    <input type="submit" value="Add Comment" class="btn btn-black rounded-0">
-                </form>
-            </div>
+    <!-- Comments -->
+    <div class="row text-black comments-container">
+        <div class="col-12 text-white">
+            <span class="sub-heading btn btn-black">Comments</span>
+            <span class="p-text text-end ms-auto btn btn-black">{{ comment.count }}</span>
         </div>
-    </div> 
+        {% for comment in comment %}  
+        {% if comment.published == True %} 
+        <div>
+            <div class="row">
+                <div class="col-10">
+                    <div class="card">
+                        <div class="card-header comment-header text-black">
+                            <p class="p-text text-bold border">{{ comment.user }}</p>
+                            <p class="p-text text-bold">{{ comment.subject }} Comment</p>
+                            <p class="text-muted text-end">{{ comment.created_on }}</p>
+                        </div>
+                        <div class="card-body comment-body position-center">
+                            <div class="blog-body-tex">{{ comment.comment | linebreaks }}</div>
+                            <p class="text-muted text-end">{{ comment.created_on }}</p>
+                            {% if comment.user == request.user or request.user.is_superuser %}
+                                <a href="{% url 'update_comment' comment.id %}" class="edit-link info-text">Edit</a> |
+                                <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>
+                            {% endif %}
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+    </div>  
+    
         <!-- Back to top button -->
     <div class="btt-button shadow-sm">
         <a class="btt-link d-flex h-100">
