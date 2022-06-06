@@ -22,8 +22,8 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
   - [**Database**](#database)
   - [**Libraries**](#libraries)
   - [**Tools**](#tools)
-- [**Features**](#features)
-  - [**Site Navigation**](#site-navigation)
+- [**Scope Plan**](#scope-plan)
+  - [**Features**](#features)
   - [**Features Implemented**](#features-implemented)
   - [**Future Features**](#future-features)
   - [**Responsive Design**](#responsive-design)
@@ -117,15 +117,18 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 
 ### **Existing Features**
 
-During the initial strategy planning, the opportunities of the site were determined and values were given according to their imporance and viability ranking between 1 and 5. Below are the list of features that were valued important and viable at this stage. The remaining features have been recorded in Features Left to Implement.
+During the initial strategy planning, the opportunities of the site were determined and values were given according to their imporance and viability ranking between 1 and 5. Below are the list of features that were valued important and viable at this stage.
 
 #### Design
 - Responsive design
 - Easy navigation throughout, nav links clearly labelled or icons used in navbar. Sidenav used for smaller devices.
 - Site logo - returns user to the home page
-- Nav link options will change depending on status of user eg. unregistered, registered or admin
-- On the home page a selection of photos will be displayed that link to different sections of the site, aimed to promote certain products or lines that are in season
-- On larger screens a hover effect over some images will display an image and call to action button. On smaller screens this will be displayed at all times.
+- Links will change or be removed depending on the status of the User.
+- The ability for users to review the product so that they can share this with non users & users alike
+- The ability to write more than one comment for a user in the Mocktail blog to discuss aspects which will be further developed in the future. 
+- Having no likes on the comments was also a personal preference.
+- A stylish modern yet simple look
+- Give users a nice way to rate there products by simply clicking on the amount of stars they rate it by.
 
 #### Products
 - Users are able to search and filter products depending on what they are looking for
@@ -135,14 +138,16 @@ During the initial strategy planning, the opportunities of the site were determi
 - Order confirmation will be displayed to user and subsequent confirmation email sent.
 - Registered users can leave reviews on products
 - Registered users can edit or delete their reviews
+- Users can rate products they have test but only one review per product.
 
 #### Register, Login and Logout
 - Users are able to register for an account
+- Registered users can update there account with any new details when required 
 - Registered users can login and logout of account
 - Users will receive confirmation emails for registering, order summary and contact enquiries.
 - Registered users can change their password if forgotten
 - Registered users can view profile containing personal information and order history
-- Registered users can save and update personal information on their profile
+
 
 #### Admin
 - Admin users can add, update and delete products
@@ -152,7 +157,6 @@ During the initial strategy planning, the opportunities of the site were determi
 - Admin users can delete user reviews on products
 - Admin users can delete users
 - Admin users can make other users admin
-- Admin users are notified by email when a user fills out the contact form
 
 #### Other
 - Users can contact site owner through contact form
@@ -162,16 +166,19 @@ During the initial strategy planning, the opportunities of the site were determi
 - All users can view blog posts, if logged in users can leave comments
 - Deletion confirmation before anything is deleted, to prevent accidental deletion
 - Cancel buttons on all edit pages, incase user changes their mind
+- A non user can make a purchase without intially having an account by adding there details in the checkout.
 
 
 
 ### **Features Left to Implement**
 
-- A wishlist section for logged in users to save products for future purchase
-- Expand further product lines and product ranges
-- To have a list of features displayed on the product detail page
-- A rating option on product reviews that generated average ratings that would be displayed on the product information
+- A user can respond to comments directly underneath like on social media to raise a discussion atmosphere
+- When the user ranks the product it should move the average of the current ranking.
+- Expand further product lines and markets
+- To have a more details on the ABV(alcohol by volumn) per product.
+- To have more detail on the origin of the product particularly with wine.
 - Out of stock notifications on product detail when a product had run out
+- Add an option to purchase a 12/24 pack of drinks etc which would entail a reduced price.
 
 
 ### **Fonts**
@@ -184,6 +191,7 @@ I originally started with Saphire Blue color as pointed out below & tested it wi
 
  ![Colour Pallette Blue](readme/assets/readme-images/colour-scheme.jpg)
  After several tests I decided to go with Mellow Apricot as I felt it complimented both Saphire Blue along with Xiketic. 
+
  ![Colour Pallette](readme/assets/readme-images/coolors-color-pallette.jpg)
 
 ### **Imagery**
