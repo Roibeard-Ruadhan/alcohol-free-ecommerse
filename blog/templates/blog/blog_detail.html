@@ -86,17 +86,17 @@
         </div>
         {% for comment in comment %}  
         {% if comment.published == True %} 
-        <div>
+        <div class="container">
             <div class="row">
                 <div class="col-10">
-                    <div class="card">
+                    <div class="card comment-body">
                         <div class="card-header comment-header text-black">
                             <p class="p-text text-bold border">{{ comment.user }}</p>
                             <p class="p-text text-bold">{{ comment.subject }} Comment</p>
                             <p class="text-muted text-end">{{ comment.created_on }}</p>
                         </div>
                         <div class="card-body comment-body position-center">
-                            <div class="blog-body-tex">{{ comment.comment | linebreaks }}</div>
+                            <div class="blog-body-text">{{ comment.comment | linebreaks }}</div>
                             <p class="text-muted text-end">{{ comment.created_on }}</p>
                             {% if comment.user == request.user or request.user.is_superuser %}
                                 <a href="{% url 'update_comment' comment.id %}" class="edit-link info-text">Edit</a> |
@@ -109,9 +109,10 @@
         {% endif %}
         {% endfor %}
         </div>
-    </div>  
+    </div>
+
     
-        <!-- Back to top button -->
+    <!-- Back to top button -->
     <div class="btt-button shadow-sm">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
