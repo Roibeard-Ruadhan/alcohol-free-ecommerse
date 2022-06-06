@@ -1,8 +1,7 @@
-https://github.com/Roibeard-Ruadhan/alcohol-free-ecommerse
 
 # The Alcohol Free Shop
-**The Alcohol Free Shop** is an ecommerce website allowing users to purchase Alcohol-Free drinks developed for my e-commerse Project 5 as part of the Code Institute - Diploma in Software Development (Full stack) Diploma.
-
+**The Alcohol Free Shop** is an ecommerce website for users looking to purchase Alcohol-Free drinks, developed for my e-commerse Project 5 as part of the Code Institute - Diploma in Software Development (Full stack) Diploma.
+ ![Mockup](readme/assets/readme-images/mockup.jpg)
 ## About
 
 Link to [live site](https://alcohol-free-shop.herokuapp.com/)
@@ -178,6 +177,7 @@ During the initial strategy planning, the opportunities of the site were determi
 - To have more detail on the origin of the product particularly with wine.
 - Out of stock notifications on product detail when a product had run out
 - Add an option to purchase a 12/24 pack of drinks etc which would entail a reduced price.
+- Add a more recipe styled Mocktail format to make more appealing visually & easier to apply.
 
 
 ### **Fonts**
@@ -187,6 +187,7 @@ For the rest of the project I used [Convergence](https://fonts.google.com/specim
 
 
 ### **Colours**
+
 I originally started with Saphire Blue color as pointed out below & tested it with various colours on [coolors](https://coolors.co/).
 
  ![Colour Pallette Blue](readme/assets/readme-images/colour-scheme.jpg)
@@ -195,10 +196,12 @@ I originally started with Saphire Blue color as pointed out below & tested it wi
  ![Colour Pallette](readme/assets/readme-images/coolors-color-pallette.jpg)
 
 ### **Imagery**
-All the product images were sourced using google images, right clicking & saving image as. When I had received the images I was able to edit the size(assist alignment), graphic formats to png & reduce the capacity using [Bulkresizephoto's](https://bulkresizephotos.com/en). All you need to do is drag & drop, pick your preferred transition options & the images will land in your downloads folder wrappeed. Unwrap the images & transfer them onto gitpod. When they are on gitpod & tested on the browser they can now be sent to AWS S3 bucket & stored in the backend. This should continue to function as long as there are no changes to the name on the frontend.  
+
+All the product images were sourced using google images, right clicking & saving image as(Educational Purposes Only noted in footer). When I had received the images I was able to edit the size(assist alignment), graphic formats to png & reduce the capacity using [Bulkresizephoto's](https://bulkresizephotos.com/en). All you need to do is drag & drop, pick your preferred transition options & the images will land in your downloads folder wrappeed. Unwrap the images & transfer them onto gitpod. When they are on gitpod & tested on the browser they can now be sent to AWS S3 bucket & stored in the backend. This should continue to function as long as there are no changes to the name on the frontend.  
 
 - The home page hero image is darkened using linear-gradient to 
-- No image was required for the logo as it was completed using the Monoton font, when set a certain font weight, with one word(shop) inside a 'strong' tag, it gives a design affect.  
+- No image was required for the logo as it was completed using the Monoton font, when set a certain font weight, with one word(shop) inside a 'strong' tag, it gives a design affect.
+- The images in the Mocktail blog page were sourced from [MakemineaMocktail.com](https://makemineamocktail.com/).
 
 ### **Wireframes**
 
@@ -217,6 +220,7 @@ All the product images were sourced using google images, right clicking & saving
 ## **Technologies**
 
 - [Django](https://www.djangoproject.com) - Framework used.
+- [Am I Responsive?](http://ami.responsivedesign.is/) was used to create the mock ups.
 - [Stripe](https://stripe.com/) - Used for adding payment functionality.
 - [AWS](https://aws.amazon.com/) - Used for hosting static and media files.
 - [Balsamiq](https://balsamiq.com) – Used for creating the wireframes.
@@ -251,6 +255,8 @@ All the product images were sourced using google images, right clicking & saving
     - Used to show the questions through pagination and for the game play.
 
 ### **Database**
+Database completed using [lucid](https://www.lucidchart.com/pages/)
+
 
 - [Amazon]
 
@@ -267,16 +273,8 @@ All the product images were sourced using google images, right clicking & saving
 
 [Back to contents](#contents)
 
-## **Features**
 
 ### **Site Navigation**
-
-
-
-
-
-### **Features Implemented**
-
 
 
 [Back to contents](#contents)
@@ -304,8 +302,6 @@ All the product images were sourced using google images, right clicking & saving
 
 #### *500.html*
 
-### **Future Features**
-
 
 ### **Responsive Design**
 
@@ -314,6 +310,9 @@ All the product images were sourced using google images, right clicking & saving
 
 
 ## **Database Layout**
+Database completed with the assistance of the [lucid chart](https://www.lucidchart.com/pages/) tools. 
+
+ ![Database Layout](readme/assets/readme-images/p5-database.png)
 
 
 [Back to contents](#contents)
