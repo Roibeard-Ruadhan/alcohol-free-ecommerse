@@ -43,15 +43,66 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 
 
 ### **User Stories**
-- All users
-    - As a user
-    -
-    -
+### User Stories
 
-- As a first time user
-  
+- As a first time visitor:
+    * I want to easily navigate throughout the site.
+    * I want to understand the purpose of the site easily so that I can see what is offers me.
+    * I expect an attractive layout & welcoming design that contributes to my experience.
+    * I want the site to be accessible.
+    * I want the site to be responsive across all devices.
 
-- As a returning user
+- As an unregistered visitor:
+    * I want to be able to search and filter products easily and efficiently.
+    * I want to be able to sort and view products according to type, price and name.
+    * I want to be able to be able to view product detail so I can find information about price, size and description.
+    * I want to be able to read reviews from previous users of the product.
+    * I want to be able to add products to my shopping basket.
+    * I want to be able to view my shopping basket.
+    * I want to be able to edit my shopping basket.
+    * I want to be able to view the total cost of my basket.
+    * I want to be able to complete the checkout process and be able to enter payment information easily.
+    * I want to be able to view a confirmation of my order once the checkout process is complete.
+    * I want to be able to received an email confirmation of my order.
+    * I want to be able to register easily for an account.
+    * I want to be able to access the Mocktail page & read the comments.
+    * I want to be able to see instructions appear to notify me if I have succeeded in my intention of purchasing a product etc.
+    * I want to be able to send a message to the company if I have any queries
+
+- As a registered visitor:
+    * I want to be able to receive a confirmation email upon registration.
+    * I want to be able to view my personalised profile.
+    * I want to be able to save and edit personal information on my profile.
+    * I want to be able to view my order history.
+    * I want to be able to login an logout with ease.
+    * I want to be able to leave reviews on products.
+    * I want to be able to edit or delete my reviews.
+    * I want to be able to leave comments on the blog posts.
+    * I want to be able to edit or delete comments on blog posts.
+    * I want to be able to leaves reviews under the products I have tested.
+    * I want to be able to edit or delete my reviews on products.
+    * I want to be able to delete my account.
+    * I want to be able to change my password to keep my account secure.
+    * I want to be able to reset my password if I forget it.
+    * I want to be able to see instructions appear to notify me if I have succeeded in posting a comment or review etc.
+
+- As a returning visitor:
+    * I want to be able to find social media links.
+    * I want to be able to contact the site owner if I have any queries.
+    * I want to enjoy using the site without never ending scrolling.
+    * I want to be able update or delete any comments or reviews I made.
+
+- As a superuser:
+    * I want to be able to add new products.
+    * I want to be able to edit or delete existing products.
+    * I want to be able to add new categories.
+    * I want to be able to edit or delete existing blog posts.
+    * I want to be able to edit or delete blog comments left by users. 
+    * I want to be able to delete or edit user reviews left on products.
+    * I want to be able to access the Django admin portal easily
+    * I want to be able to delete a user.
+    * I want to be able to make another user admin.
+    * I want to be able to add a new Mocktail blog via the browser when logged in or in the admin.
  
 
 
