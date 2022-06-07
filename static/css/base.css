@@ -458,7 +458,7 @@ label:hover ~ input:checked ~ label {
     color: #cc9000;
 }
 
-/* -------------------------  Blog page */
+/* -------------------------_  Blog page */
 
 .blog {
     margin: 3rem;
@@ -468,7 +468,7 @@ label:hover ~ input:checked ~ label {
     height: 22rem;
 }
 
-.blog-image {
+.blog-image-1 {
     height: 22rem;
     width: fit-content;
     border: 3px solid #ddd;
@@ -500,7 +500,7 @@ p.p-text {
 
 }
 
-.blog-image img {
+.blog-image-2 img {
     width: 60%;
     height: 60%;
     border: 3px solid #ddd;
