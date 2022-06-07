@@ -88,12 +88,13 @@
             <div class="col-10">
                 <div class="card comment-body m-0">
                     <div class="card-header comment-header text-white">
-                        <p class="p-text text-bold comment-author text-end">{{ comment.user }}:      </p><br>
-                        <div class="p-text text-bold text-center justify-content-center">  Subject:{{ comment.subject }} Comment</p></div>
+                        <div class="p-text text-bold text-center justify-content-center">  
+                            <strong class="comment-author">  Subject:</strong>     {{ comment.subject }} Comment</p></div>
                     </div>
                     <div class="card-body comment-body position-center">
                         <div class="blog-body-text text-sm">{{ comment.comment | linebreaks }}</div>
                         <p class="text-muted text-end comment-date">{{ comment.created_on }}</p>
+                        <p class="text-bold comment-author">Comment by:  <strong class="text-black"> {{ comment.user }}</strong></p>
                         {% if comment.user == request.user or request.user.is_superuser %}
                             <a href="{% url 'update_comment' comment.id %}" class="edit-link info-text">Edit</a> |
                             <a href="{% url 'delete_comment' comment.id %}" class="delete-link error-text">Delete</a>
