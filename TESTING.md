@@ -147,10 +147,12 @@ The project was tested thoroughly and the results are presented below:
 
     * *As a shopper I can easily login or logout so that I can view my personal account & be able to access my profile*
 
-        * 
+        * As per the folowing images the process to login or logout two simple steps
 
         ![Login](readme/assets/testing-images/user-story/login.jpg)
+        *  Sign out message to confirm
         ![Sign out confirmation](readme/assets/testing-images/user-story/logout.jpg)
+        *  Message confirming you have logged our
         ![Logged out](readme/assets/testing-images/user-story/logged-out.jpg)
 
 
@@ -158,21 +160,23 @@ The project was tested thoroughly and the results are presented below:
 
     * *As a shopper I can view individual drink details so that identify the price, category, description product rating, drink image, customer ratings & reviews*
 
+        * As per the 1st below image all the product details displayed neatly for users to navigate at ease
+
+        ![Product details](readme/assets/testing-images/user-story/product-details.jpg)
+        * Below image is where anybody can read the reviews of the users & see there ratings right under the review form.
+        ![Product user review](readme/assets/testing-images/user-story/product-review.jpg)
+
+    * *As a shopper I can easily select the drink & quantity I wish to purchase so that I can ensure I don't accidentally select the wrong product or quantity*
+
+        * As per the quantity select in this 'ARRRR image below, the user can click the + & minus buttons to confirm the quantity of each product. In this occasion where the pirate has purchased 16 bottle of Rumish.  
+
+        ![Quantity choice](readme/assets/testing-images/user-story/quantity.jpg)
+
+    * *As a shopper I can easily see what is available based on my search criteria and the number of results so that I can quickly decide whether the product I want is available*
+
         * 
 
-        ![Sign up location](readme/testing-images/)
-
-    * *As a shopper I can easily select the quantity of drink I wish to purchase so that I can ensure I don't accidentally select the wrong product or quantity*
-
-        * 
-
-        ![Sign up location](readme/testing-images/)
-
-    * *As a shopper I can easily see what I have searched for and the number of results so that I can quickly decide whether the product I want is available*
-
-        * 
-
-        ![Sign up location](readme/testing-images/)
+        ![Search bar](readme/assets/testing-images/user-story/search-bar.jpg)
 
     * *As a shopper I can search for a drink by name or description so that I can find a specific drink I would like to purchase*
 
