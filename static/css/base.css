@@ -356,9 +356,13 @@ font-size: 2rem;
     color: whitesmoke!important;
 }
 
+/* ----------- delivery banner */ 
+
 #delivery-banner h4 {
     font-size: 1.3rem;
 }
+
+/* ----------------------Standard buttons */
 
 .btn.btn-outline-black.rounded-0{
     padding: .375rem .375rem;
@@ -386,7 +390,27 @@ font-size: 2rem;
     width: unset;
 }
 
-/* readme credits for Rathan Kumar tob hide radiobutton*/
+/* ---------------------- Review Products */
+
+.card-reader {
+    width: 100%;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    background: -webkit-linear-gradient(to right, #125E8A, #fff);
+    background: linear-gradient(to right, #125E8A, #fff);
+    color:#FFFFFF;
+    padding: 10px;
+}
+
+
+/* ------------- Rating Products: readme credits for Rathan Kumar tob hide radiobutton*/
 
 .rate > input {
     display: none;
@@ -473,10 +497,6 @@ p.p-text {
     width: 100%;
 }
 
-.m-0 {
-    margin: 0;
-}
-
 .comment-header {
     display: flex;
     align-items: center;
@@ -504,7 +524,6 @@ p.p-text {
     width: 700px;
     max-width: 100%;
     margin: auto;
-    padding: 0 30px;
     background-color: #fff;
     border: 1px solid transparent;
 }
@@ -512,6 +531,7 @@ p.p-text {
 .blog {
     margin: 3rem;
 }
+
 
 /* -------------------------------- Media Queries */
 

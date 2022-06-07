@@ -137,16 +137,16 @@
                             <h3>Customer Reviews</h3>
                             {% for review in reviews %}
                             {% if review.published == True %} 
-                                <div class="border">
-                                    <hr>
-                                    <p class="font-weight-bold">{{ review.subject }} Posted by: {{ review.user }} on {{ review.created_on }}</p>
-                                    <p class="text-black">{{ review.user }}'s Rating: {{ review.rating }} </p>
-                                    <p class="text-black">{{ review.review }}</p>
+                                <div class="comment-body">
+                                    <p class="comment-author review-header"><strong>  Rating: {{ review.rating }}</strong> </p>
+                                    <p class="font-weight-bold">{{ review.subject }}</p><hr>
+                                    <p class="text-black comment-body">{{ review.review }}</p>
+                                    <p>Posted by: {{ review.user }}  </p>
+                                    <p class="comment-date">{{ review.created_on }}</p>
                                     {% if review.user == request.user or request.user.is_superuser %}
                                         <div><a href="{% url 'update_review' review.id %}" class="btn btn-black my-2 ml-2">Update Review</a></div>
                                         <div><a href="{% url 'delete_review' review.id %}" class="btn btn-black my-2 ml-2">Delete Review</a></div>
                                     {%endif%}
-                                    <hr>
                                 </div>
                             {% endif %}
                             {% endfor %}
