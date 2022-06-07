@@ -105,7 +105,7 @@ The project was tested thoroughly and the results are presented below:
 
         * On arrival of the website, the user is able to understand the purpose of the website. This is due to the use of imagery, logo, the homepage CTA and the navigation links available to the user to visit.
 
-        ![Homepage background](readme/testing-images/user-story/home-page.jpg)
+        ![Homepage background](readme/assets/testing-images/user-story/home-page.jpg)
 
     * *As a shopper I can easily register for an account so that have a personal account to be able to view my profile*
 

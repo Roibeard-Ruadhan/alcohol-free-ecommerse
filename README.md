@@ -1,7 +1,8 @@
 
 # The Alcohol Free Shop
-**The Alcohol Free Shop** is an ecommerce website for users looking to purchase Alcohol-Free drinks, developed for my e-commerse Project 5 as part of the Code Institute - Diploma in Software Development (Full stack) Diploma.
+**The Alcohol Free Shop** is an ecommerce website for users looking to purchase Alcohol-Free drinks. This was developed for education purposes. It is a fully functioning ecommerce Project developed as part of my- Diploma in Software Development (Full stack) with [Code Institute](https://codeinstitute.net/ie/).
  ![Mockup](readme/assets/readme-images/mockup.jpg)
+
 ## About
 
 Link to [live site](https://alcohol-free-shop.herokuapp.com/)
