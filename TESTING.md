@@ -105,49 +105,53 @@ The project was tested thoroughly and the results are presented below:
 
         * On arrival of the website, the user is able to understand the purpose of the website. This is due to the use of imagery, logo, the homepage CTA and the navigation links available to the user to visit.
 
-        ![Homepage background](readme/assets/testing-images/user-story/home-page.jpg)
+        ![Homepage-page](readme/assets/testing-images/user-story/home-page.jpg)
 
-    * *As a shopper I can easily register for an account so that have a personal account to be able to view my profile*
+    * *As a shopper I can easily register for an account so that I have my own personal account to be able to view my profile*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Register page](readme/assets/testing-images/user-story/register.jpg)
     
     * *As a shopper I can follow on Facebook so that I can be up to date with announcements & share with my followers*
 
         * The
 
-        ![Homepage background](readme/testing-images/user-story/)
+        ![Facebook page](readme/assets/testing-images/user-story/facebook.jpg)
 
     * *As a shopper I can sign up for a newsletter so that I can avail of the discount & updates on new products etc*
 
         * The
 
-        ![Homepage background](readme/testing-images/user-story/)
+        ![Facebook](readme/assets/testing-images/user-story/mailchimp-newsletter.jpg)
 
     * *As a shopper I can have a personalized user profile so that I can view my personal order history and order confirmations and save my payment information*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Profile](readme/assets/testing-images/user-story/profile-1.jpg)
 
     * *As a shopper I can receive an email confirmation after registering so that I can verify that my account registration was successful*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Email confirmation](readme/assets/testing-images/user-story/confirmation.jpg)
 
     * *As a shopper I can easily recover my password in case I forget it so that I can access my personal account information*
 
+        * By following the steps as per the images below. If you are getting a password error, click the link 'Forgot Password?'. 
+
+        ![Sign up location](readme/assets/testing-images/user-story/forgotten-password.jpg)
+        * Part 2 is to complete the following form & await an email to balidate resetting old password.
+        ![Sign up location](readme/assets/testing-images/user-story/password-reset.jpg)
+
+    * *As a shopper I can easily login or logout so that I can view my personal account & be able to access my profile*
+
         * 
 
-        ![Sign up location](readme/testing-images/)
-
-    * *As a shopper I can easily login or logout so that have a personal account & be able to view my profile*
-
-        * 
-
-        ![Sign up location](readme/testing-images/)
+        ![Login](readme/assets/testing-images/user-story/login.jpg)
+        ![Sign out confirmation](readme/assets/testing-images/user-story/logout.jpg)
+        ![Logged out](readme/assets/testing-images/user-story/logged-out.jpg)
 
 
     ### Products
