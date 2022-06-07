@@ -1,6 +1,54 @@
--Testing pageAs a shopper I can **follow on Facebook ** so that I can be up to date with announcements & share with my followers
+The project was tested thoroughly and the results are presented below:
 
--As a staff member I can get a notification if I edit or delete a product so that I can undo my error if I press delete by accident
+## Table of contents:
+
+ * [Validation](#validation)
+    + [HTML](#html)
+      - [W3C Markup Validation Service](#w3c-markup-validation-service)
+    + [CSS](#css)
+      - [W3C CSS Validation Service](#w3c-css-validation-service)
+    + [JavaScript](#javascript)
+      - [JSHint](#jshint)
+    + [Python](#python)
+    + [Lighthouse](#lighthouse)
+      - [Desktop](#desktop)
+      - [Mobile](#mobile)
+  * [Testing of User stories from UX section of README.md](#testing-of-user-stories-from-ux-section-of-readmemd)
+      - [General](#general)
+      - [Products](#products)
+      - [Basket](#basket)
+      - [Checkout](#checkout)
+      - [Blog](#blog)
+      - [Contact](#contact)
+  * [Testing process](#testing-process)
+    + [Manual Testing](#manual-testing)
+      - [Navigation bar](#navigation-bar)
+      - [Footer](#footer)
+      - [Home](#home)
+      - [Sign up page](#sign-up-page)
+      - [Login page](#login-page)
+      - [Logging out](#logging-out)
+      - [Products](#products-1)
+      - [Basket](#basket)
+      - [Checkout](#checkout)
+      - [Profile](#profile)
+      - [Blog Management](#blog-management)
+      - [Product Management](#product-management)
+      - [Blog](#blog)
+      - [Contact](#contact)
+      - [Toasts](#toasts)
+      - [CRUD Functionality](#crud-functionality)
+      - [Responsiveness](#responsiveness)
+      - [Browsers and devices](#browsers-and-devices)
+      - [Stripe Testing](#stripe-testing)
+      - [Defensive Programming](#defensive-programming)
+    + [Bugs](#bugs)
+      - [Fixed Bugs](#fixed-bugs)
+      - [Known Bugs](#known-bugs)
+
+As a shopper I can follow on Facebook  so that I can be up to date with announcements & share with my followers
+
+As a staff member I can get a notification if I edit or delete a product so that I can undo my error if I press delete by accident
 
 As a user I can rate, rank, review & read the same so that I can inform others of my experience while learning from others experiences
 

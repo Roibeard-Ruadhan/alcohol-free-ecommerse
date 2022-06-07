@@ -123,8 +123,8 @@
                                     <input type="submit" value="Submit Review" class="btn btn-black">
                                     {% else %}
                                     <p class="p-text">Please
-                                        <a class="info-text p-text" href="{% url 'account_login' %}"> Login </a> or
-                                        <a class="info-text p-text" href="{% url 'account_signup' %}">Signup</a>
+                                        <a class="btn btn-black" href="{% url 'account_login' %}"> Login </a> or
+                                        <a class="btn btn-black" href="{% url 'account_signup' %}">Signup</a>
                                         to add a comment.</p>
                                     {% endif %}
                                 </div>
@@ -138,11 +138,11 @@
                             {% for review in reviews %}
                             {% if review.published == True %} 
                                 <div class="comment-body">
-                                    <p class="comment-author review-header"><strong>  Rating: {{ review.rating }}</strong> </p>
-                                    <p class="font-weight-bold bg-secondary">{{ review.subject }}</p><hr>
+                                    <p class="font-weight-bold review-header comment-author">{{ review.subject }}</p>
                                     <p class="text-black comment-body">{{ review.review }}</p>
                                     <p>Posted by: {{ review.user }}  </p>
                                     <p class="comment-date">{{ review.created_on }}</p>
+                                    <p class=""><strong>  Rating: {{ review.rating }}</strong> </p><hr>
                                     {% if review.user == request.user or request.user.is_superuser %}
                                         <div><a href="{% url 'update_review' review.id %}" class="btn btn-black my-2 ml-2">Update Review</a></div>
                                         <div><a href="{% url 'delete_review' review.id %}" class="btn btn-black my-2 ml-2">Delete Review</a></div>
