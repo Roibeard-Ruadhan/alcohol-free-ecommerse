@@ -245,7 +245,7 @@ The project was tested thoroughly and the results are presented below:
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Sign up location](readme/assets/testing-images/user-story/credit-card.jpg)
 
     * *As a shopper I can easily enter my payment information so that I can checkout quickly with no hassle*
 
