@@ -168,7 +168,7 @@ The project was tested thoroughly and the results are presented below:
 
     * *As a shopper I can easily select the drink & quantity I wish to purchase so that I can ensure I don't accidentally select the wrong product or quantity*
 
-        * As per the quantity select in this 'ARRRR image below, the user can click the + & minus buttons to confirm the quantity of each product. In this occasion where the pirate has purchased 16 bottle of Rumish.  
+        * As per the quantity select in this 'ARRRR image below, the user can click the plus & minus buttons to confirm the quantity of each product. In this occasion where the pirate has purchased 16 bottle of Rumish.  
 
         ![Quantity choice](readme/assets/testing-images/user-story/quantity.jpg)
 
@@ -176,25 +176,25 @@ The project was tested thoroughly and the results are presented below:
 
         * 
 
-        ![Search bar](readme/assets/testing-images/user-story/search-bar.jpg)
+        ![Search bar](readme/assets/testing-images/user-story/category.jpg)
 
     * *As a shopper I can search for a drink by name or description so that I can find a specific drink I would like to purchase*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Search bar](readme/assets/testing-images/user-story/search-bar.jpg)
 
     * *As a shopper I can sort a specific category of a drink so that I can find the best priced or best-rated product in a specific category*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Sort drop down](readme/assets/testing-images/user-story/sort.jpg)
 
-    * *As a shopper I can sort the list of available drinks so that I can easily identify the best rated or the best priced or even in categories from a-z*
+    * *As a shopper I can sort the list of available drinks so that I can easily identify in alphabethical order of category or product name from a-z or z-a*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Sign up location](readme/assets/testing-images/user-story/sort-from-a-z.jpg)
 
 
     ### Reviews
@@ -202,44 +202,44 @@ The project was tested thoroughly and the results are presented below:
 
         * The
 
-        ![Homepage background](readme/testing-images/user-story/)
+        ![Homepage background](readme/assets/testing-images/user-story/rate-product.jpg)
 
     ### Bag
      * *As a shopper I can adjust the quantity of individual items in my bag so that I can easily make changes to my purchase before checkout*
 
-        * 
+        * As per the image below the user may see the drinks currently in the shopping bag & make any informed changes before moving on to the checkout page
 
-        ![Sign up location](readme/testing-images/)
+        ![Adding & removing drinks pre checkout](readme/assets/testing-images/user-story/shopping-bag-2.jpg)
 
-    * *As a shopper I can view items in shopping bag to be purchased so that I can identify the total cost of my purchase and all items I will receive*
+    * *As a shopper I can view items in shopping bag to be purchased so that I can identify the total cost of my purchase and all items I will receive, including delivery costs*
 
-        * 
+        * As per the below image the customer is given details of the costs when reaching the checkout page so that they make an informed decision before proceeding
 
-        ![Sign up location](readme/testing-images/)
+        ![Pre checkout options](readme/assets/testing-images/user-story/shopping-bag.jpg)
 
     * *As a shopper I can easily view the total of my purchases at any time so that avoid spending too much*
 
-        * 
+        * As per the below image the user always has visible access to the current shopping bag total at the top right hand corner of the screen
 
-        ![Sign up location](readme/testing-images/)
+        ![Shopping bag price display](readme/assets/testing-images/user-story/shopping-bag-3.jpg)
     ### Checkout
-    * *As a shopper I can enter my details when making a payment while momentarily setting up an account so that I do not have to set up an acount in advance or in the future*
+    * *As a user I have my details stored in my profile account so that I no longer need to go through the procedure of entering my details when making a payment*
 
-        *
+        * As per the image below when a user is logged in their details will automatically be inserted into the form at checkout time. 
 
-        ![Sign up location](readme/testing/ux-testing/)
+        ![Details stored](readme/assets/testing-images/user-story/checkout-profile.jpg)
 
     * *As a shopper I can receive an email confirmation after checking out so that I can keep the confirmation of what I have purchased for my records*
 
-        * 
+        * As per the image below the shopper will receive an email directly after purchasing to confirm details of successful transaction
 
-        ![Sign up location](readme/testing-images/)
+        ![Checkout confirmation email](readme/assets/testing-images/user-story/checkout-mail.jpg)
 
     * *As a shopper I can view an order confirmation after checkout so that I can have peace of mind that I have not made any errors*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Sign up location](readme/assets/testing-images/user-story/order-confirmation.jpg)
 
     * *As a shopper I can feel my personal and payment information is safe and secure so that I can confidently provide the needed information to make a purchase*
 
@@ -258,26 +258,26 @@ The project was tested thoroughly and the results are presented below:
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Read Comments](readme/assets/testing-images/user-story/comments.jpg)
 
     * *As a User I can view a list of posts so that I can select one to read based on the synopsis*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Read blogs](readme/assets/testing-images/user-story/blog-post.jpg)
 
     * *As a user I can leave comments on a post so that I can be involved & express my view*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Add comments](readme/assets/testing-images/user-story/add-comment.jpg)
 
     ### Contact
     * *As a shopper I can contact the shop so that I can make a query in relation to the business or products etc*
 
         * 
 
-        ![Sign up location](readme/testing-images/)
+        ![Sign up location](readme/assets/testing-images/user-story/contact.jpg)
 
 
 
