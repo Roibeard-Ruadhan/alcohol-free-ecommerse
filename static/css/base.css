@@ -458,7 +458,25 @@ label:hover ~ input:checked ~ label {
     color: #cc9000;
 }
 
-/* -----------------Blog page */
+/* -------------------------  Blog page */
+
+.blog {
+    margin: 3rem;
+}
+
+.blog-container {
+    height: 22rem;
+}
+
+.blog-image {
+    height: 22rem;
+    width: fit-content;
+    border: 3px solid #ddd;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+/* -----------------Blog Details page */
 .heading {
     justify-content: center;
     text-align: center;
@@ -485,6 +503,8 @@ p.p-text {
 .blog-image img {
     width: 60%;
     height: 60%;
+    border: 3px solid #ddd;
+    padding: 1px;
     border-radius: 8px;
     
 }
@@ -503,6 +523,7 @@ p.p-text {
     height: 50px;
     font-size: 14px;
     overflow: hidden;
+    line-height: 0;
     position: relative;
     background: -webkit-linear-gradient(to right, #125E8A, #211A1D);
     background: linear-gradient(to right, #125E8A, #211A1D);
@@ -523,14 +544,13 @@ p.p-text {
 .comment-body {
     width: 700px;
     max-width: 100%;
-    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #fff;
     border: 1px solid transparent;
 }
 
-.blog {
-    margin: 3rem;
-}
 
 
 /* -------------------------------- Media Queries */
