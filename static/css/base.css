@@ -20,7 +20,7 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
+/* ------------- Logo*/
 .brand {
     font-family: 'Monoton';
     font-size: 1.8rem;
@@ -35,7 +35,7 @@ body {
 .main-logo-link {
     width: fit-content;
 }
-
+/*---------------------------  Home page Shop now button*/
 .shop-now-button {
     background: black;
     color: white;
@@ -54,6 +54,7 @@ body {
     border: .5px solid black;
 }
 
+/* ------ Global buttons used throughout website- Hover*/
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
@@ -61,6 +62,7 @@ body {
     color: #ffc371 !important;
 }
 
+/* ------ Hover for global buttons used throughout website, primarily in the allauth pages stored in the allauth base.html */
 .allauth-form-inner-content button:hover, 
 .allauth-form-inner-content button:active, 
 .allauth-form-inner-content button:focus, 
@@ -70,7 +72,7 @@ body {
     background: black;
     color: #ffc371 !important;
 }
-
+/* Hover for Home page shop now button */
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -96,7 +98,7 @@ body {
 .bg-black {
     background: #0d0221 !important;
 }
-
+/* To remove the background image from the majority of pages */
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -324,10 +326,10 @@ color: #ffc371;
 i {
 color: #ffc371;
 }
-
+/* -------------------Forms */
 .form-control::placeholder {
 font-size: 0.95rem;
-color: #aaa;
+color: #aaa;  /* Target placeholder to mute text */
 font-style: italic;
 }
 
@@ -335,13 +337,12 @@ font-style: italic;
 box-shadow: none;
 }
 
-
-
+/* Shop Now descriptive text */
 .display-4.logo-font.text-black {
 font-size: 2rem;
 }
 
-
+/* --------------------------Navigation Bar */
 .navbar-expand-lg .navbar-nav 
 .nav-link:hover {
     color: #ffc371!important;
@@ -374,7 +375,7 @@ font-size: 2rem;
     font-size: 1.3rem;
 }
 
-/* ----------------------Standard buttons */
+/* ----------------------Buttons for checkout */
 
 .btn.btn-outline-black.rounded-0{
     padding: .375rem .375rem;
@@ -397,8 +398,8 @@ font-size: 2rem;
     padding: .355rem .355rem !important;
 }
 
-/* -------------products page */
-/* ---------------------- Review Products */
+/* -------------------------------Products page */
+/* --------------Review Products */
 .container-review {
     width: 75vw;
     margin: auto;
@@ -547,7 +548,7 @@ p.p-text {
 .card-reader {
     width: 100%;
 }
-
+/*-- Blog comments */
 .comment-header {
     display: flex;
     align-items: center;
