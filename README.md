@@ -243,6 +243,7 @@ All the product images were sourced using google images, right clicking & saving
 - [JSHint](https://jshint.com/) – Used to validate Javascript code
 - [Coolors](https://coolors.co/) - Used for selecting complimentary colour palettes.
 - [Facebook page](https://www.facebook.com/Alcohol-Free-Shop-101298052611366) - Used Facebook page to promote website
+- [Mailchimp Newsletter](https://mailchimp.com/) - Used to supply the fuctional Newsletter subscription which is placed in the footer. 
 
 ### **Languages**
 

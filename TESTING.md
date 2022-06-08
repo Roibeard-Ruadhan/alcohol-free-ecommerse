@@ -284,16 +284,28 @@ The project was tested thoroughly and the results are presented below:
 
 
 
-   
-## Manual Testing
-
 ## Testing process
-
-### Manual Testing
+## Manual Testing
+The website was thoroughly tested as per the detailed account of the manual testing is below:
 
 ### Navigation bar
+* All navigation bar links were tested and worked correctly. &check;
+* All dropdown menus appear correctly when their link has been clicked and all dropdown menu links take the user to the right page. i.e dropdown menus for categories take the user to the specific one selected. &check;
+* The 'Alcohol-Free Shop' logo takes the user back to the home page as intended. &check;
+* Below the bag icon, shows the total price of the current shopping bag and correctly changes price every time an item is added or removed. &check;
+* The search bar works as expected, it returns a page of drinks if the user correctly matches something in the product database. &check;
+* If a search query doesn't match a product on the site, the user is informed that '0 Products found for "*Query*". &check;
+* If nothing is input, the user receives a toast advising they haven't 'entered any search criteria!'. &check;
+* When the user hovers over any link of the Navbar the colour will change. &check;
+* Just above the Navbar there is a notification highlighting free delivery when an order price is above a certain number. &check;
+* The drop down account in the Navbar allows the users to sign in or logout at ease. &check;
 
 ### Footer
+* The Newsletter(by mailchimp) application is placed inside the footer so that the user can subscribe on all pages. It has been styled to match the footer & also for responsiveness. &check;
+* All social media links take the user to the correct page and correctly open a new tab for the user to view them on. Specifically the linked Facebook page for Alcohol-Free Shop &check;
+* A link to all the different products is supplied here underneath the heading Shop. &check;
+* A link to login, contact, register or view All products is supplied here underneath the heading Company. &check;
+* The colour design of the footer was created using linear-gradient in CSS. &check;
 
 ### Home
 
