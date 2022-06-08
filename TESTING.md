@@ -364,7 +364,8 @@ The website was thoroughly tested as per the detailed account of the manual test
 * When the user is logged in the submit button underneath the Review form will appear &check;
 * If the user/non user is not logged in the button will no longer be there & will be replaced with the comment in the image below. When the buttons are clicked to user/non user will be directed to the correct page to login or signup respectively &check;
     ![Sign up/login](readme/assets/testing-images/user-story/review-drink.jpg)
-* The user can rate the drink when making a review by clicking on the stars provided from one to five. When the user hovers over said stars they change to a yellow star colour. I was able to impliment this important element thanks to a youtube video tutorial by Rathan Kumar.
+* The user can rate the drink when making a review by clicking on the stars provided from one to five. When the user hovers over said stars they change to a yellow star colour. I was able to impliment this important element thanks to a youtube video tutorial by Rathan Kumar. This review is specified as a requirement to enter a comment
+*
 
 
 #### Bag

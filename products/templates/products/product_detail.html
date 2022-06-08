@@ -138,7 +138,8 @@
                             {% for review in reviews %}
                             {% if review.published == True %} 
                                 <div class="review-body">
-                                    <p class="font-weight-bold review-header comment-author">{{ review.subject }}</p>
+                                    <pre><p class="font-weight-bold review-header comment-author text-white">
+                                        <strong class="comment-author">Subject:</strong> {{ review.subject }}</p></pre> 
                                     <p class="text-black">{{ review.review }}</p>
                                     <p>Posted by: {{ review.user }}  </p>
                                     <p class="comment-date">{{ review.created_on }}</p>
