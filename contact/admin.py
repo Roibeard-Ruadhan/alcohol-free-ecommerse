@@ -32,5 +32,4 @@ class ContactAdmin(admin.ModelAdmin):
     ordering = ['-date']
 
 
-
 admin.site.register(Contact_message, ContactAdmin)

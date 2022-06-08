@@ -31,6 +31,7 @@ def error_500(request, *args, **argv):
     '''
     return render(request, '500.html', status=500)
 
+
 @login_required
 def submit_review(request, product_id):
     """ View to review a product """
@@ -39,8 +40,8 @@ def submit_review(request, product_id):
         review_form = ReviewForm(request.POST)
 
         if review_form.is_valid():
-            already_reviewed = Reviews.objects.filter(product=product,
-                                                           user=request.user)
+            already_reviewed = Reviews.objects.filter(
+                product=product, user=request.user)
             if not already_reviewed:
                 Reviews.objects.create(
                         product=product,
@@ -85,7 +86,7 @@ def find_rating_average(reviews):
         return rating_average
 
 
-# Redirect to previous page from askdevz.com 
+# Redirect to previous page from askdevz.com
 class RedirectToPreviousMixin:
     """
     A view to Redirect back to page
@@ -101,8 +102,9 @@ class RedirectToPreviousMixin:
         return self.request.session['previous_page']
 
 
-class UpdateReview(RedirectToPreviousMixin, LoginRequiredMixin,
-                       SuccessMessageMixin, UpdateView):
+class UpdateReview(
+    RedirectToPreviousMixin, LoginRequiredMixin, 
+    SuccessMessageMixin, UpdateView):
     """
     A view to edit a Review
     """

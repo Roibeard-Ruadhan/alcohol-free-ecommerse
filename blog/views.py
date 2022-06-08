@@ -29,7 +29,7 @@ def error_500(request, *args, **argv):
     '''
     return render(request, '500.html', status=500)
 
-    
+
 # All blog posts view
 def all_blog_posts(request):
     """
@@ -170,7 +170,8 @@ class Delete_Blog_Post(LoginRequiredMixin, DeleteView):
         """ delete blogpost message """
         response = super().delete(request, *args, **kwargs)
         messages.success(
-            self.request, 'The Mocktail blogpost has been deleted sucessfully!')
+            self.request,
+             'The Mocktail blogpost has been deleted sucessfully!')
         return response
 
 
@@ -180,7 +181,8 @@ class RedirectToPreviousMixin:
     default_redirect = '/'
 
     def get(self, request, *args, **kwargs):
-        request.session['previous_page'] = request.META.get('HTTP_REFERER', self.default_redirect)
+        request.session['previous_page'] = request.META.get(
+            'HTTP_REFERER', self.default_redirect)
         return super().get(request, *args, **kwargs)
 
     def get_success_url(self):
@@ -188,7 +190,8 @@ class RedirectToPreviousMixin:
 
 
 # Update Comment
-class EditCommentView(RedirectToPreviousMixin, LoginRequiredMixin, SuccessMessageMixin, UpdateView):
+class EditCommentView(RedirectToPreviousMixin,
+ LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     """
     A view to edit a comment in Mocktails blog
     """

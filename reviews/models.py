@@ -3,7 +3,6 @@ from products.models import Product
 from django.contrib.auth.models import User
 
 
-
 class Reviews(models.Model):
     """ This is for the product reviews and ratings """
     product = models.ForeignKey(Product, on_delete=models.CASCADE)

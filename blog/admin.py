@@ -69,8 +69,6 @@ class ReviewsAdmin(admin.ModelAdmin):
         queryset.update(published=True)
 
 
-
-
 admin.site.register(BlogPost, BlogPostAdmin)
 admin.site.register(BlogComment, BlogCommentAdmin)
 admin.site.register(Reviews, ReviewsAdmin)

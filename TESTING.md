@@ -78,9 +78,7 @@ The project was tested thoroughly and the results are presented below:
 
 * All Python files were validated through the use of [PEP8 online](http://pep8online.com/) and all passed successfully.
 
-![Python Validation](readme/testing-images/validation/)
-
-* A Gitpod built-in linter called pylint was also used to fix bugs within the python code and provided many suggestions on how to improve the code. For instance it advised to place a docstring at the top of all the python files.
+![Python Validation](readme/assets/testing-images/validation/pep8.jpg)
 
 ![Pylint Example](readme/testing-images/validation/)
 
@@ -88,13 +86,14 @@ The project was tested thoroughly and the results are presented below:
 
 * Lighthouse was also used to test the project on both desktop and mobile.
 
+
 #### Desktop
 
-![Lighthouse Desktop Result](readme/testing-images/validation/)
+![Lighthouse Desktop Result](readme/assets/testing-images/validation/lighthouse-desktop.jpg)
 
 #### Mobile
 
-![Lighthouse Mobile Result](readme/testing-images/validation/)
+![Lighthouse Mobile Result](readme/assets/testing-images/validation/lighthouse-mobile.jpg)
 
 ## Testing of User stories & UX value
 
@@ -507,6 +506,11 @@ The website was thoroughly tested as per the detailed account of the manual test
 * As an extra security step, When the user signs up, they are required to verify their email. &check;
 ## Bugs
 ### Fixed Bugs
+##### Bug 1
+* My contact page would not open due to a programmable error for at least a few days. Every time I went back to it I would tweet the code a bit & run migrations. Nothing seemed to work so I decided to delete the migrations file & run migrations again. when this didn't work decided to delete all migration files in the tree & make migrations again. As this did not work I tried deleting the back on from a different angle to make sure all migrations we removed. Until I finally tried : python3 manage.py migrate contact zero, thanks to some fine guidance from the Tutor Sean.
+
+##### Bug 2
+
 
 ### Known Bugs
 

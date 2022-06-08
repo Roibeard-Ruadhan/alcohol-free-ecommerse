@@ -3,7 +3,6 @@ from django.shortcuts import (
 from django.shortcuts import render
 
 
-
 def handler_403(request, exception):
     '''403 error view'''
     return render(request, '403.html', status=403)
@@ -27,3 +26,4 @@ def index(request):
     """ A view to return the index page """
 
     return render(request, 'home/index.html')
+
