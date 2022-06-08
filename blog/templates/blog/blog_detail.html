@@ -77,7 +77,7 @@
 </div>
 <!-- Comments -->
 <div class="text-black text-bold">
-    <div class="col-12 text-white">
+    <div class="col-12 text-white text-center">
         <span class="sub-heading">Comments</span>
         <span class="p-text ms-auto">{{ comment.count }}</span>
     </div>
@@ -85,8 +85,8 @@
     {% if comment.published == True %} 
     <div>
         <div>
-            <div class="col-12">
-                <div class="card comment-body m-0">
+            <div class="col-12 container-blog">
+                <div class="comment-body">
                     <div class="card-header comment-header text-white">
                         <div class="p-text text-bold text-center justify-content-center">  
                             <strong class="comment-author">  Subject:</strong>     {{ comment.subject }}</p></div>

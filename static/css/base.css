@@ -390,6 +390,7 @@ font-size: 2rem;
 }
 
 /* -------------products page */
+/* ---------------------- Review Products */
 .container-review {
     width: 75vw;
     margin: auto;
@@ -397,7 +398,6 @@ font-size: 2rem;
     justify-content: center;
 }
 
-/* ---------------------- Review Products */
 
 .card-reader {
     width: 100%;
@@ -568,9 +568,15 @@ p.p-text {
     text-decoration: none;
 }
 
+.container-blog {
+    width: 75vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
 .comment-body {
-    width: 700px;
-    max-width: 100%;
+    width: 70vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
