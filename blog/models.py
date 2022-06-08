@@ -17,7 +17,7 @@ class BlogPost(models.Model):
     image = models.ImageField(null=True, blank=True)
     body_text = models.TextField(default=None, blank=False, null=True)
     subject = models.CharField(max_length=100, blank=True)
-    comment = models.TextField(max_length=1000, blank=False, null=True)
+    comment = models.TextField(max_length=1000, blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True, blank=True)
 
     def __str__(self):

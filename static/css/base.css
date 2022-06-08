@@ -403,10 +403,20 @@ font-size: 2rem;
     font-size: 14px;
     overflow: hidden;
     position: relative;
-    background: -webkit-linear-gradient(to right, #125E8A, #fff);
-    background: linear-gradient(to right, #125E8A, #fff);
+    background: -webkit-linear-gradient(to right, #125E8A, rgb(0, 0, 0));
+    background: linear-gradient(to right, #125E8A, rgb(0, 0, 0));
     color:#FFFFFF;
     padding: 10px;
+}
+
+.review-body {
+    width: 700px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid transparent;
 }
 
 
@@ -489,6 +499,8 @@ p.p-text {
 .background-cover {
     background: #ffffff;
     opacity: .9;
+    filter: alpha(opacity=90);  /* Opacity for IE8 and lower */
+    zoom: 1;  /*  Opacity fix for IE7 */
     padding: 2rem;
     margin:1rem;
     width: 92%;
