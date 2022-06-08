@@ -165,7 +165,7 @@ The project was tested thoroughly and the results are presented below:
 
         ![Product details](readme/assets/testing-images/user-story/product-details.jpg)
         * Below image is where anybody can read the reviews of the users & see there ratings right under the review form.
-        ![Product user review](readme/assets/testing-images/user-story/product-review.jpg)
+        ![Product user review](readme/assets/testing-images/user-story/review-drink.jpg)
 
     * *As a shopper I can easily select the drink & quantity I wish to purchase so that I can ensure I don't accidentally select the wrong product or quantity*
 
@@ -362,11 +362,23 @@ The website was thoroughly tested as per the detailed account of the manual test
 
 #### Review Product
 * When the user is logged in the submit button underneath the Review form will appear &check;
-* If the user/non user is not logged in the button will no longer be there & will be replaced with the comment in the image below. When the buttons are clicked to user/non user will be directed to the correct page to login or signup respectively &check;
-    ![Sign up/login](readme/assets/testing-images/user-story/review-drink.jpg)
-* The user can rate the drink when making a review by clicking on the stars provided from one to five. When the user hovers over said stars they change to a yellow star colour. I was able to impliment this important element thanks to a youtube video tutorial by Rathan Kumar. This review is specified as a requirement to enter a comment
-*
+* If the user/non user is not logged in the button will no longer be there & will be replaced with the comment as per the image below. When the buttons are clicked to user/non user will be directed to the correct page to login or signup respectively &check;
+    ![Review drnk](readme/assets/testing-images/user-story/review-drink.jpg)
+* The user can rate the drink when making a review by clicking on the stars provided from one to five. When the user hovers over said stars they change to a yellow star colour. I was able to impliment this important element thanks to a youtube video tutorial by Rathan Kumar. This review is specified as a requirement to enter a comment &check;
+* The user is only allowed one critical review & if they attempt to write a second review they well receive the following error message &check;
+    ![One review per user](readme/assets/testing-images/user-story/one-review-only.jpg)
+* When the user is logged in a button will appear under their reviews to give them the option to update or delete comments. This will only appear under the users comments unless they are a superuser who can update & delete all comments. &check;
+    ![One review per user](readme/assets/testing-images/user-story/update-user-post.jpg)
+* When the user clicks update review they will be taken to the update review page as per the image below. &check;
+    ![Update review page](readme/assets/testing-images/user-story/update-review.jpg)
+* When they have updated the review & clicked update they will get the folowing success message.&check;
+    ![Update review page](readme/assets/testing-images/user-story/review-update-success.jpg)
+* When the user clicks to delete their review they will be directed to the following delete review page to confirm deletion. &check;
+    ![Update review page](readme/assets/testing-images/user-story/delete-review.jpg)
+* If they click delete they will get the following success message & if they click cancel they will return to the products page.&check;
+    ![Update review page](readme/assets/testing-images/user-story/delete-review-success.jpg)
 
+* I am critical at times of likes on comments so I did not add this but I may add this & the option to reply in the future. Also when the user rates the comment ideally it would update the current rating of the product via an average calculation.
 
 #### Bag
 
