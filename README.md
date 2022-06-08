@@ -56,10 +56,10 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
     * I want to be able to sort and view products according to type, price and name.
     * I want to be able to be able to view product detail so I can find information about price, size and description.
     * I want to be able to read reviews from previous users of the product.
-    * I want to be able to add products to my shopping basket.
-    * I want to be able to view my shopping basket.
-    * I want to be able to edit my shopping basket.
-    * I want to be able to view the total cost of my basket.
+    * I want to be able to add products to my shopping bag.
+    * I want to be able to view my shopping bag.
+    * I want to be able to edit my shopping bag.
+    * I want to be able to view the total cost of my bag.
     * I want to be able to complete the checkout process and be able to enter payment information easily.
     * I want to be able to view a confirmation of my order once the checkout process is complete.
     * I want to be able to received an email confirmation of my order.
@@ -131,8 +131,8 @@ During the initial strategy planning, the opportunities of the site were determi
 
 #### Products
 - Users are able to search and filter products depending on what they are looking for
-- Users can add products to shopping basket
-- Users can update or delete products from shopping basket
+- Users can add products to shopping bag
+- Users can update or delete products from shopping bag
 - Users can securely purchase product(s) from the site
 - Order confirmation will be displayed to user and subsequent confirmation email sent.
 - Registered users can leave reviews on products

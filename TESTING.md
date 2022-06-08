@@ -354,7 +354,7 @@ The website was thoroughly tested as per the detailed account of the manual test
 * When the user clicks on the product image, it opens a new tab for the user to view a full page image of the product as intended. &check;
 * The quantity select box minus and plus buttons work correctly. i.e they decrease or increase quantity by 1 each time they are pressed. &check;
 * The quantity will not go below 1 as intended and above 99 as intended. If the user tries to manually input a number out of this range, they aren't able to & the button colour will change to signify no action taken &check;
-* The 'Add to Basket' button works as expected and adds the item(s) to basket. &check;
+* The 'Add to bag' button works as expected and adds the item(s) to bag. &check;
 * The price will appear underneath the name of the product with a euro sign beside it. &check;
 * The category of the product is displayed with a golden tag beside it which can be clicked to see further products in this category. &check;
 * The short description of the product is displayed so that the user can make an informed choice. This description was sourced by entering the product name followed by description into google &check;
@@ -381,27 +381,37 @@ The website was thoroughly tested as per the detailed account of the manual test
 * I am critical at times of likes on comments so I did not add this but I may add this & the option to reply in the future. Also when the user rates the comment ideally it would update the current rating of the product via an average calculation.
 
 #### Bag
+* When no items have been added to the bag, the bag page shows a 'Continue Shopping' button which correctly takes the user to the 'All Products' page. &check;
+* The bag page correctly shows all the items and the item specifics selected by the user and matches the bag toast shown every time a user adds something to the bag. &check;
+* The user is able to change quantity of an item by clicking the minus and plus buttons. &check;
+* The user cannot go below 1 or above 99 when selecting a quantity. &check;
+* The update and remove links were as expected. When a quantity has been increased or decreased and the update link is clicked, the user is met with the new updated quantity and the price changes correctly too. &check;
+* When the user clicks on the remove link, the item is removed successfully and the total bag price changes accordingly too. &check;
+* Both bag page and the bag toast shows the free delivery message advising the user if they spend a certain amount, they'll receive free delivery. If the total price is above £50, the message doesn't appear correctly. &check;
+* The 'Secure Checkout' button correctly takes the user to the Checkout page. &check;
+* The 'Secure Checkout' button on the bag toast correctly takes the user to the bag page as intended. &check;
+* The subtotal and grand total prices correctly change with compliance to any changes made to items. &check;
 
 #### Checkout
+* The checkout page shows the correct items in the bag. &check;
+* If the user has added any delivery details to their profile and saved them, they are automatically filled in on the Checkout page. &check;
+* The checkbox allowing the user to save their delivery information when they order their items works as intended. It doesn't save the information if left blank but does stay their the next time the user goes to their Profile page or goes to the Checkout page again. &check;
+* If the user isn't logged in, two links to create or login to an account to save delivery information is shown and both links take the user to the right page. &check;
+* All form fields with asterisks need to be filled in and the user is met with a message for each one if its not filled in or valid. &check;
+* The country form field correctly shows all the countries the user can input and works when one is selected. &check;
+* The 'Adjust bag' button takes the user back to the bag page as intended. &check;
+* The card payment field shows a specific message if a card number is not entered correctly or the expiry date, security code or ZIP code is entered correctly either. &check;
+* When every form field is valid and the user presses on the button 'Create Order', they are met with a loading screen and then taken to the Checkout Success page. &check;
+* The Checkout Success page shows the order details to the user and they are saved in the order history of the users Profile page if a user ordered it signed in. &check;
+* The user will also receive a checkout success message in the top right corner with the order number when checkout is successful &check;
+* The user is also sent an email confirming their order and is given all the appropriate order information in the email too. &check;
+
 
 #### Profile
-    * *As a shopper I can easily recover my password in case I forget it so that I can access my personal account information*
+* The Default delivery information can be edited and saved by pressing on the 'Update Information' button which saves it as intended and a toast appears saying the Profile is updated successfully. &check;
+* The users order history also shows a list of all past orders and each order has a link to its order information on the order number which works correctly. &check;
+* The can easily recover their password in case forgetten so that they can access their personal account information with previous order information &check;
 
-        * 
-
-        ![Sign up location](readme/testing-images/)
-
-    * *As a shopper I can easily login or logout so that have a personal account & be able to view my profile*
-
-        * 
-
-        ![Sign up location](readme/testing-images/)
-
-    * *As a shopper I can easily register for an account so that have a personal account to be able to view my profile*
-
-        * 
-
-        ![Sign up location](readme/testing-images/)
 #### Blog Management
 * *As a site admin I can approve or disapprove comments so that I can filter out somewhat objectionable comments*
 #### Product Management
