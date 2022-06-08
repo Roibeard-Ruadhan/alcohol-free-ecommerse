@@ -391,7 +391,10 @@ font-size: 2rem;
 
 /* -------------products page */
 .container-review {
-    width: unset;
+    width: 75vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---------------------- Review Products */
