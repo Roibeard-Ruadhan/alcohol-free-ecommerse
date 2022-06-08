@@ -362,8 +362,8 @@ The website was thoroughly tested as per the detailed account of the manual test
 
 #### Review Product
 * When the user is logged in the submit button underneath the Review form will appear &check;
-* If the user/non user is not logged in the button will no longer be there & will be replaced with the comment as per the image below. When the buttons are clicked to user/non user will be directed to the correct page to login or signup respectively &check;
-    ![Review drnk](readme/assets/testing-images/user-story/review-drink.jpg)
+* If the user/non user is not logged in the button will no longer be there & will be replaced with the comment as per the image below. When the buttons either the signup/login buttons are clicked, the user/non user will be directed to the correct page to login or signup respectively &check;
+    ![Review drink](readme/assets/testing-images/user-story/review-drink.jpg)
 * The user can rate the drink when making a review by clicking on the stars provided from one to five. When the user hovers over said stars they change to a yellow star colour. I was able to impliment this important element thanks to a youtube video tutorial by Rathan Kumar. This review is specified as a requirement to enter a comment &check;
 * The user is only allowed one critical review & if they attempt to write a second review they well receive the following error message &check;
     ![One review per user](readme/assets/testing-images/user-story/one-review-only.jpg)
@@ -378,7 +378,7 @@ The website was thoroughly tested as per the detailed account of the manual test
 * If they click delete they will get the following success message & if they click cancel they will return to the products page.&check;
     ![Update review page](readme/assets/testing-images/user-story/delete-review-success.jpg)
 
-* I am critical at times of likes on comments so I did not add this but I may add this & the option to reply in the future. Also when the user rates the comment ideally it would update the current rating of the product via an average calculation.
+* I am critical at times of likes on comments so I did not add this but I may add the option to reply in the future. Also when the user rates the product ideally it would update the current rating of the product via an average calculation.
 
 #### Bag
 * When no items have been added to the bag, the bag page shows a 'Continue Shopping' button which correctly takes the user to the 'All Products' page. &check;
@@ -413,28 +413,70 @@ The website was thoroughly tested as per the detailed account of the manual test
 * The can easily recover their password in case forgetten so that they can access their personal account information with previous order information &check;
 
 #### Blog Management
-* *As a site admin I can approve or disapprove comments so that I can filter out somewhat objectionable comments*
+* When entering the Blog page the Super user is the only one who can see & click the button which takes you to the blog page for creating & adding new blogs. &check;
+* All form fields work as expected, the form fields which need something inputting in will inform the user if nothing has been added to them and stop them submitting. &check;
+* The image field works successfully and adds a blog post image. If no image is given, the default one shows instead. &check;
+* Edit buttons on both the Blog page and Blog Detail page take the superuser to the correct Edit blogpost page. &check;
+* The Delete buttons both work on the Blog page and Blog Detail page, opening up a page requesting confirmation of the delete before proceeding. &check;
+    ![Update review page](readme/assets/testing-images/user-story/delete-blog.jpg)
+* The cancel button works correctly on the modal and so does the cross, cancelling the deletion. &check;
+* The Delete button on the modal works successfully removing the blog post from the site and showing a toast, saying its been deleted successfully. &check;
+* The 'Create Post' button works when all the form is valid on the add blog post page. &check;
+* The 'Edit Post' button works when all the form is valid on the edit blog post page. &check;
+* When a comment is made it needs to be approved by the admin before it will be published &check;
+
 #### Product Management
-    * *As an admin I can add a new drink so that I can allow customers a wider selection to choose from*
-
-        * 
-
-        ![Sign up location](readme/testing-images/)
-* *As a staff member I can get a notification if I edit or delete a product so that I can undo my error if I press delete by accident*
+* The user is correctly taken to the page where they can add a product when selecting 'Product Management' on the 'Accounts dropdown menu. &check;
+* All form fields work as expected, the form fields which need something inputting in will inform the user if nothing has been added to them and stop them submitting. &check;
+* The image field works successfully and adds a product image. If no image is given, the default one shows instead. &check;
+* Edit buttons on both the Product page and Product Detail page take the user to the correct Edit product page. &check;
+* The Delete buttons both work on the Product page and Product Detail page, imperatively opening up a page to confirm deletion. &check;
+* The cancel button works correctly on the modal and so does the cross, cancelling the deletion. &check;
+* The Delete button in the admin works successfully removing the product from the site and showing a toast, saying its been deleted successfully. &check;
+* The 'Create Product' button works when all the form is valid on the add product page. &check;
+* The 'Edit Product' button works when all the form is valid on the edit product page. &check;
+* Admin can add new products in the browser & the admin at ease by clicking on the drop down menu My Acount to sourcce the Product Management.
 
 #### Blog
 
-    * *As an admin I can delete a drink(product) so that I can remove items that are no longer for sale*
+##### Blog page
 
-        * 
+* The blog page shows a list of blogs added and can view a full specific blog post succesfully by clicking on the 'Read More' button. &check;
+* It has a 'back to top* button with an arrow like the products page to redirect the user to the top at anytime. &check;
+* The Blog page shows a synopsis of th the blog with the main image, date of publication along with the author &check;
 
-        ![Sign up location](readme/testing-images/)
+##### Blog Detail page
+
+* The blog detail page has an image at the top with the blog just below which is viewed on very a slight opacity of white background &check;
+* When the user is logged in the submit button underneath the Blog form will appear &check;
+* If the user/non user is not logged in the button will no longer be there & will be replaced with the comment as per the image below. When either of the login/signup buttons are clicked the user will be directed to the correct page to login or signup respectively &check;
+    ![Comment on Blog](readme/assets/testing-images/user-story/no-comment-button.jpgg)
+* The user is allowed to comment more than once as the possible reply button has not been implimented(yet) &check;
+* When the user is logged in a button will appear under their comment to give them the option to update or delete comments. This will only appear under the users comments unless they are a superuser who can update & delete all comments. &check;
+* When the user clicks update comment they will be taken to the update comment page. &check;
+* When they have updated the comment & clicked update they will get the folowing success message.&check;
+    ![Update review page](readme/assets/testing-images/user-story/comment-updated.jpg)
+* When the user clicks to delete their review they will be directed to the delete comment page to confirm deletion. &check;
+* If they click delete they will get a success message & if they click cancel they will return to the products page.&check;
+
+* I am critical at times of likes on comments so I did not add this but I may add the option to reply in the future.
 
 #### Contact
 
+* All form fields show a message if nothing is inputted into them or its content is not valid and stops the user submitting the form until it is valid. &check;
+* When the form is submitted, the user receives a confirmation email advising them that 'Proper Clobber' have received the query and will be touch shortly. &check;
+* A toast also appears on successful submission telling the user, 'Proper Clobber' will be in touch shortly.
+
 #### Toasts
 
+* The toasts appear correctly any time a relevant action has been taken. &check;
+* The JavaScript used for the toast messages work as intended. The toast appears for 6 seconds and fades out for 2 seconds. &check;
+* All information and links work as expected on the Basket toast. &check;
+
 #### CRUD Functionality
+
+* All CRUD functionality was tested and worked as expected. &check;
+
 
 #### Responsiveness
 

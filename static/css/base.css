@@ -45,6 +45,7 @@ body {
 .btn-black {
     background: black;
     color: white;
+    margin-bottom: 0;
 }
 
 .btn-outline-black {
@@ -179,6 +180,7 @@ a.category-badge > span.badge:hover {
     color: #ffc371 !important;
     font-size: large;
 }
+
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
