@@ -166,12 +166,18 @@ a.category-badge > span.badge:hover {
 .arrow-up {
     width: 0; 
     height: 0; 
+    color: #0d0221;
     border-left: 2px solid transparent;
     border-right: 2px solid transparent; 
     border-bottom: 8px solid black;
     position: absolute;
     top: -10px;
     right: 36px;
+}
+
+.fa-arrow-up {
+    color: #ffc371 !important;
+    font-size: large;
 }
 
 /* Convenience classes - colors copied from Bootstrap */

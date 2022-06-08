@@ -172,7 +172,7 @@ During the initial strategy planning, the opportunities of the site were determi
 ### **Features Left to Implement**
 
 - A user can respond to comments directly underneath like on social media to raise a discussion atmosphere
-- When the user ranks the product it should move the average of the current ranking.
+- When the user rates the product it should move the average of the current ranking.
 - Expand further product lines and markets
 - To have a more details on the ABV(alcohol by volumn) per product.
 - To have more detail on the origin of the product particularly with wine.
@@ -617,6 +617,7 @@ And the second item is the ‘ARN/*’
 
 
 ## **Credits**
+Rathan Kumar on youtube for the star rating tutorial
 
 ### **Code**
 
