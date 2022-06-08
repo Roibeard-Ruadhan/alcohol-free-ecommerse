@@ -464,14 +464,14 @@ The website was thoroughly tested as per the detailed account of the manual test
 #### Contact
 
 * All form fields show a message if nothing is inputted into them or its content is not valid and stops the user submitting the form until it is valid. &check;
-* When the form is submitted, the user receives a confirmation email advising them that 'Proper Clobber' have received the query and will be touch shortly. &check;
-* A toast also appears on successful submission telling the user, 'Proper Clobber' will be in touch shortly.
+* A toast also appears on successful submission telling the user, 'Alcohol-Free Shop' will be in touch shortly. &check;
+* You do not have to be a user to send a message to Alcohol-Free Shop via the contacts page 
 
 #### Toasts
 
 * The toasts appear correctly any time a relevant action has been taken. &check;
-* The JavaScript used for the toast messages work as intended. The toast appears for 6 seconds and fades out for 2 seconds. &check;
-* All information and links work as expected on the Basket toast. &check;
+* The JavaScript used for the toast messages work as intended. &check;
+* All information and links work as expected on the shopping bag toast. &check;
 
 #### CRUD Functionality
 
@@ -507,7 +507,7 @@ The website was thoroughly tested as per the detailed account of the manual test
 * As an extra security step, When the user signs up, they are required to verify their email. &check;
 ## Bugs
 ### Fixed Bugs
-    
+
 ### Known Bugs
 
     
