@@ -71,16 +71,16 @@ The project was tested thoroughly and the results are presented below:
 #### JSHint
 
 * All JavaScript files or snippets of JavaScript at the bottom of HTML files were validated successfully through [JSHint](https://jshint.com/).
+    ![JavaScript Validation](readme/assets/testing-images/validation/js.jpg.jpg)
 
-![JavaScript Validation](readme/testing-images/validation/)
+* The JavaScript files for handling the Stripe payment flow
+    ![JavaScript Validation](readme/assets/testing-images/validation/js-2.jpg)
 
 ### Python
 
 * All Python files were validated through the use of [PEP8 online](http://pep8online.com/) and all passed successfully.
 
-![Python Validation](readme/assets/testing-images/validation/pep8.jpg)
-
-![Pylint Example](readme/testing-images/validation/)
+    ![Python Validation](readme/assets/testing-images/validation/pep8.jpg)
 
 ### Lighthouse
 
