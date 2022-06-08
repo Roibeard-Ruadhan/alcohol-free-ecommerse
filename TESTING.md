@@ -477,19 +477,37 @@ The website was thoroughly tested as per the detailed account of the manual test
 
 * All CRUD functionality was tested and worked as expected. &check;
 
-
 #### Responsiveness
-
+* Responsiveness work was continually worked on, some areas including the incremental & decremental buttons may need more work with alignment to be more responsive particularly on the smallest phone sizes. The subjects comments can be cut off below 350 but this can be resolved in time.
 #### Browsers and devices
+* I have constantly done test on different browsers & sent to friends & family to do the same. I made some changes in particular in the css to resolve issues on many browser using linear-gradient(footer & subject) & opacity. I found some issues on my phone but when I do the phone test on my laptop it is working ok.  
+
+* The website was tested on the following Desktop browsers:
+
+    * Firefox
+    * Google Chrome + Mobile
+    * Microsoft Edge 
+    * Brave + Mobile
+    * Duck Duck Go(mobile)
 
 #### Stripe Testing
 
+* The Stripe functionality has been consistently tested with every new change and the result below shows the webhooks generated from a successful order.
+
+    ![Update review page](readme/assets/testing-images/user-story/stripe-webhook.jpg)
+
 #### Defensive Programming
 
+* Error pages were tested and worked. &check;
+* When a user inputs a URL that doesn't exist, it correctly returns a 404 error page. &check;
+* If the user tries to enter a URL that does exist, like an add product page, edit product page or delete product URL but is not signed in as the superuser, it will just redirect the user to the login page. As per the below image: the user tried to enter the private page by enter it into the url & was directed back to the sign up page. When signed in as a user was informed the clear message as per below &check;
+    ![Update review page](readme/assets/testing-images/user-story/private-page.jpg)
+* A confirmation modal was added in the case of the superuser accidentally pressing the delete button. This gives the superuser chance to cancel the deletion in this instance. &check;
+* The allauth sign up process hashes the users password in the admin panel. &check;
+* As an extra security step, When the user signs up, they are required to verify their email. &check;
 ## Bugs
-
 ### Fixed Bugs
-
+    
 ### Known Bugs
 
     
