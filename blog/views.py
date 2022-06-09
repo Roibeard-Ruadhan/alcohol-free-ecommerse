@@ -38,7 +38,7 @@ def all_blog_posts(request):
     """
 
     blog_posts = BlogPost.objects.all()
-# Paginator is functioning but needs more work to meet site standard whence- 4
+# Paginator is functioning but needs more css work to meet site standard whence- no.4
     paginator = Paginator(blog_posts ,4) 
 
     page = request.GET.get('page')

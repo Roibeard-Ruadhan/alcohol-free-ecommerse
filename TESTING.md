@@ -51,12 +51,26 @@ The project was tested thoroughly and the results are presented below:
 ## Validation
 
 ### HTML
+## [HTML](https://validator.w3.org):
+
+All pages were free from errors, except those noted below
+base.html:
+Error :Element li not allowed as child of element nav in this context.
+* All li tags are wrapped in ul tags
+Error: Duplicate ID user-options & specials-link
+* Used on the same page for the same function
+
+The rest of the issues are related to Templating{}
+
+![HTML Validation](readme/assets/testing-images/validation/html-validation.jpg)
+
+
 
 #### W3C Markup Validation Service 
 
 * [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the project. Each page was validated by its URL and produced no errors or warnings. When each HTML page was validated by direct input, all errors produced were due to templating.
 
-![HTML Validation](readme/testing-images/)
+![HTML Validation](readme/assets/testing-images/validation/css-validation.jpg)
 
 ### CSS
 
@@ -516,7 +530,8 @@ The website was thoroughly tested as per the detailed account of the manual test
 * 403, 404 & 500 pages not appearing on Heroku or local server. I tried everything until recently realising that static files must be loaded to the template for the error pages to function.
     ![Update review page](readme/assets/testing-images/user-story/error-pages.jpg)
 ##### Bug 3
-* 
+* When I tried to delete some testing users from my admin, I got the following error. This error was resolved by updating the UserProfile Admin & returning self.user.username
+    ![Deleting user from admin](readme/assets/testing-images/user-story/delete-user-admin.jpg)
 
 ### Known Bugs
 

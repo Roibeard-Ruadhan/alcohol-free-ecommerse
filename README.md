@@ -38,9 +38,6 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
   - [**Acknowledgements**](#acknowledgements)
   
 
-## **UX (User Experience)**
-
-
 ### **User Stories**
 ### User Stories
 
@@ -105,11 +102,10 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
  
 
 ### **Site Owner Goals** 
-
+* To build a fully functioning eCommerce webpage that brings value to the userS
 
 
 [Back to contents](#contents)
-
 
 
 ## **Scope-Plan**
@@ -206,14 +202,11 @@ All the product images were sourced using google images, right clicking & saving
 
 ### **Wireframes**
 
-
 - Desktop view
-- for each page
+- 
 
 
-- Mobile view
-  
-
+- Mobile views to be added
 
 [Back to contents](#contents)
 
@@ -244,7 +237,7 @@ All the product images were sourced using google images, right clicking & saving
 - [Coolors](https://coolors.co/) - Used for selecting complimentary colour palettes.
 - [Facebook page](https://www.facebook.com/Alcohol-Free-Shop-101298052611366) - Used Facebook page to promote website
 - [Mailchimp Newsletter](https://mailchimp.com/) - Used to supply the fuctional Newsletter subscription which is placed in the footer. 
-
+- [Make Mine a Mocktail](https://makemineamocktail.com/) - Used to supply content to the blog
 ### **Languages**
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -260,55 +253,65 @@ All the product images were sourced using google images, right clicking & saving
 Database completed using [lucid](https://www.lucidchart.com/pages/)
 
 
-- [Amazon]
+[AWS](https://aws.amazon.com/) was used to host static and media files required for the site.
 
 
-### **Libraries**
+### **Frameworks and Libraries**
 
-
-
-### **Services**
+- [Bulma](https://bulma.io/)
+    - Used to design a mobile-first responsive website layout along with custom components. 
+- [Django](https://www.djangoproject.com/)
+    - High level framework used for rapid development of the site. 
 
 
 ### **Tools**
 
+- [Git](https://git-scm.com/)
+  - Git was used for version control (commit to Git and push to GitHub).
+- [GitHub](https://github.com/)
+  - Used to store, host and deploy the project files and source code after being pushed from Git. I also used it for the Project Kanban board to keep track and split tasks into smaller tasks to make them easier to fulfill.
+- [Gitpod](https://www.gitpod.io/)
+  - An online IDE linked to the GitHub repository used to write my code.
+- [Heroku](https://www.heroku.com/home)
+    - A Cloud Application Platform used to deploy the site
+- [AWS](https://aws.amazon.com/)
+    - A cloud application to hold media files.
+- [Google fonts](https://fonts.google.com/)
+  - Used to compare and choose fonts. 
+- [Coolors](https://coolors.co/)
+  - Used to research and choose the colour scheme by comparing and contrasting similar colours in the generator.
+- [Favicons](https://favicon.io/)
+  - Used to generate a favicon for the website title.
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+  - Used to audit the site for quality and ensure responsiveness.
+- [JSHint](https://jshint.com/)
+    - Used to detect errors in the JavaScript files
+- [PEP8 Online](http://pep8online.com/)
+    - Used to check PEP8 compliance in the code
+- [W3C Markup Validator](https://validator.w3.org/)
+    - Markup validation service for HTML5
+- [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+    - CSS3 Validation Service
+
 
 [Back to contents](#contents)
 
-
-### **Site Navigation**
-
-
-[Back to contents](#contents)
-
-
-### Features 
-
-
-[Back to contents](#contents)
-
-
-
-
-
-[Back to contents](#contents)
-
-
-
-[Back to contents](#contents)
 
 ### **Error Pages**
 
 #### *404.html*
 
+ - 404 page created to redirect users back to the main site via the home page in case of an error
+    ![JavaScript](readme/assets/readme-images/error-404.jpg)
+
+#### *403.html*
+
+ - 403 page created to redirect users back to the main site in case they try to access a page they are not authorised to
 
 #### *500.html*
 
+ - 500 error page created to redirect users to the main site after a server error
 
-### **Responsive Design**
-
-
-[Back to contents](#contents)
 
 
 ## **Database Layout**
@@ -333,13 +336,6 @@ See below for how this was managed:
 
 [Back to contents](#contents)
 
-### Gitpod Workspaces
-
-
-### Gitpod branching and committing to GitHub
-
-
-[Back to contents](#contents)
 
 ## **Testing**
 
@@ -620,29 +616,21 @@ And the second item is the ‘ARN/*’
 4.	In the S3 bucket create a folder called `media` and upload any required media files to it. Under Manage Public Permissions -> Select grant public read access to these objects -> Upload.
 
 
-
-### How to run the project locally
-
-
 [Back to contents](#contents)
 
 
 ## **Credits**
-Rathan Kumar on youtube for the star rating tutorial
-
-### **Code**
-
-
-### **Content**
-
+- Rathan Kumar on youtube for the star rating tutorial to assist with building my rate & review for products.
+- [Code Institute](https://codeinstitute.net/) course material and mini projects form the main resource for this project-Life Changing!.
+- [Make Mine a Mocktail](https://makemineamocktail.com/) for their excellent content on how to build the perfect Mocktail
 
 ### **Images**
-
-
+* Majority of the images were sourced from google whence the reference in my footer -'Educational Purposes Only.'
+* I sourced the Mocktail images from [Make mine a Mocktail](https://makemineamocktail.com/)
 
 
 ### **Acknowledgements**
-I don't have much time to write this but I can't thank the Tutor team enough for their incredible guidance & support throughout this project. To my Mentor Gurjot_mentor for all his advice, feedback & support. To Kasia for her endless inspiration & advice. Many thanks to the Slack community & to the Tutor team at Code Institute for their help throughout the development process 
+I can't thank the Tutor team enough for their incredible guidance & support throughout this project. To my Mentor Gurjot_mentor for all his advice, feedback & support. To Kasia for her endless inspiration & advice. Many thanks to the Slack community & to all the team at Code Institute for their help throughout the development process. Code Institute, I love you more than you will ever know :cupid:
 
 
 ### **Disclaimer**

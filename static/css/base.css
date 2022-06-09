@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
-
 html {
     height: 100%;
 }
@@ -12,6 +10,7 @@ body {
     color: #555;
     font-family: 'Convergence', sans-serif;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -50,7 +49,7 @@ body {
 
 .btn-outline-black {
     background: black;
-    color: white !important; /* use important to override link colors for <a> elements */
+    color: white !important; /* use important to override link colors for a elements */
     border: .5px solid black;
 }
 
@@ -215,7 +214,7 @@ a.category-badge > span.badge:hover {
 
 .allauth-form-inner-content input {
     border-color: #0d0221;
-    border-radius: 20;
+    border-radius: 20px;
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -243,7 +242,7 @@ a.category-badge > span.badge:hover {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: 20;
+    border-radius: 20px;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -278,14 +277,14 @@ a.category-badge > span.badge:hover {
 }
 
 .custom-checkbox .custom-control-label::before {
-    border-radius: 20;
+    border-radius: 20px;
     border-color: #dc3545;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
     border-color: #dc3545;
-    border-radius: 20;
+    border-radius: 20px;
 }
 
 /* --------------------footer */
@@ -601,8 +600,7 @@ p.p-text {
     .header-container {
         padding-top: 164px;
     }
-}
-
+  }
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
@@ -616,12 +614,12 @@ p.p-text {
       font-size: 3rem;
       font-weight: 300;
       line-height: 1.2;
-}}
-
+    }
+}
 @media (max-width: 520px) {
     .display-4 {
         font-size: 2rem;
         font-weight: 300;
         line-height: 1.2;
-  }
+    }
 }

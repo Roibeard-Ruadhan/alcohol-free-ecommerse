@@ -3,6 +3,7 @@ from .models import BlogPost, BlogComment
 from reviews.models import Reviews
 
 
+
 class BlogPostAdmin(admin.ModelAdmin):
     """
     Setup Blog Post section of Admin Panel
