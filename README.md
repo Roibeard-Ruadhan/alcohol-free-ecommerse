@@ -97,7 +97,7 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
     * I want to be able to add a new Mocktail blog via the browser when logged in or in the admin.
  
 
-### **Site Owner Goals** 
+#### **Site Owner Goals** 
 * To build a fully functioning eCommerce webpage that brings value to the userS
 
 
@@ -629,7 +629,7 @@ And the second item is the ‘ARN/*’
 
 
 ### **Acknowledgements**
-I can't thank the Tutor team enough for their incredible guidance & support throughout this project. To my Mentor Gurjot_mentor for all his advice, feedback & support. To Kasia for her endless inspiration & advice. Many thanks to the Slack community & to all the team at Code Institute for their help throughout the development process. Code Institute, I love you more than you will ever know :cupid:
+Firstly, thank you to covid for finally letting me get back to my p.5 after some struggle :neckbeard:. I can't thank the Tutor team enough for their incredible guidance & support throughout this project. To my Mentor Gurjot_mentor for all his advice, feedback & support. To Kasia for her endless inspiration & advice. Many thanks to the Slack community & to all the team at Code Institute for their help throughout the development process. Code Institute, I love you more than you will ever know :cupid:
 
 
 ### **Disclaimer**
