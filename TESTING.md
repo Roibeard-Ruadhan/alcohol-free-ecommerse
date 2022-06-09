@@ -533,6 +533,5 @@ The website was thoroughly tested as per the detailed account of the manual test
 * When I tried to delete some testing users from my admin, I got the following error. This error was resolved by updating the UserProfile Admin & returning self.user.username
     ![Deleting user from admin](readme/assets/testing-images/user-story/delete-user-admin.jpg)
 
-### Known Bugs
 
     

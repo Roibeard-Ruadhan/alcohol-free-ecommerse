@@ -1,6 +1,7 @@
 
 # The Alcohol Free Shop
-**The Alcohol Free Shop** is an ecommerce website for users looking to purchase Alcohol-Free drinks. This was developed for education purposes. It is a fully functioning ecommerce Project developed as part of my- Diploma in Software Development (Full stack) with [Code Institute](https://codeinstitute.net/ie/).
+**The Alcohol Free Shop** is an ecommerce website for users looking to purchase Alcohol-Free drinks. It gives great value to the user where they can rate & review a product that they have used & also read other users reviews. They can also gain value from interacting on the Mocktail blog page, which gives tips on making high quality Mocktails(including nutritional value). This was developed for education purposes. It is a fully functioning ecommerce Project developed as part of my- Diploma in Software Development (Full stack) with [Code Institute](https://codeinstitute.net/ie/).
+ 
  ![Mockup](readme/assets/readme-images/mockup.jpg)
 
 ## About
@@ -306,10 +307,13 @@ Database completed using [lucid](https://www.lucidchart.com/pages/)
 #### *403.html*
 
  - 403 page created to redirect users back to the main site in case they try to access a page they are not authorised to
+ * Visually the same as the 404 using the same template but with the number 403 instead
+
 
 #### *500.html*
 
  - 500 error page created to redirect users to the main site after a server error
+  * Visually the same as the 404 using the same template but with the number 500 instead
 
 
 
