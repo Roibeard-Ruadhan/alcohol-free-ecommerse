@@ -25,16 +25,12 @@ Link to [live site](https://alcohol-free-shop.herokuapp.com/)
 - [**Scope Plan**](#scope-plan)
   - [****Existing Features****](#existing-features)
   - [**Future Features**](#future-features)
-  - [**Responsive Design**](#responsive-design)
 - [**Version Control**](#version-control)
 - [**Testing**](#testing)
 - [**Deployment**](#deployment)
   - [**Running Locally**](#running-locally)
 - [**Credits**](#credits)
-  - [**Code**](#code)
-  - [**Content**](#content)
   - [**Images**](#images)
-  - [**Inspiration**](#inspiration)
   - [**Acknowledgements**](#acknowledgements)
   
 
@@ -203,10 +199,13 @@ All the product images were sourced using google images, right clicking & saving
 ### **Wireframes**
 
 - Desktop view
-- 
+* The home page wireframe below was going to impliment cards for each product category but this would not add much value in terms of real world use case. Most people are aware of drink categories & do not need a small image & brief desciption of each.
+    ![MakemineaMocktail.com](readme/assets/readme-images/home-page.png)
+* The products page stayed with the original wireframe. There was a lot of consideration into adding a banner image in the background of the nav bar but I found this did not add any proffessional value.
+    ![MakemineaMocktail.com](readme/assets/readme-images/products.page.png)
+* The Mocktail blog page has change in some minor areas, mainly in styling & the pagination implimentation.
+    ![MakemineaMocktail.com](readme/assets/readme-images/blog-page.png)
 
-
-- Mobile views to be added
 
 [Back to contents](#contents)
 
