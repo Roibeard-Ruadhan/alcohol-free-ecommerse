@@ -477,7 +477,7 @@ The website was thoroughly tested as per the detailed account of the manual test
 * All CRUD functionality was tested and worked as expected. &check;
 
 #### Responsiveness
-* Responsiveness work was continually worked on, some areas including the incremental & decremental buttons may need more work with alignment to be more responsive particularly on the smallest phone sizes. The subjects comments can be cut off below 350 but this can be resolved in time.
+* Responsiveness work was continually worked on, some areas including the incremental & decremental buttons may need more work with alignment to be more responsive particularly on the smallest phone sizes. The subjects comments can be cut off below 350 but this can/will be resolved in time.
 #### Browsers and devices
 * I have constantly done test on different browsers & sent to friends & family to do the same. I made some changes in particular in the css to resolve issues on many browser using linear-gradient(footer & subject) & opacity. I found some issues on my phone but when I do the phone test on my laptop it is working ok.  
 
@@ -507,10 +507,14 @@ The website was thoroughly tested as per the detailed account of the manual test
 ## Bugs
 ### Fixed Bugs
 ##### Bug 1
-* My contact page would not open due to a programmable error for at least a few days. Every time I went back to it I would tweet the code a bit & run migrations. Nothing seemed to work so I decided to delete the migrations file & run migrations again. when this didn't work decided to delete all migration files in the tree & make migrations again. As this did not work I tried deleting the back on from a different angle to make sure all migrations we removed. Until I finally tried : python3 manage.py migrate contact zero, thanks to some fine guidance from the Tutor Sean.
+* My contact page would not open due to a programming error for at least a few days. Every time I went back to it I would tweet the code a bit & run migrations. Nothing seemed to work so I decided to delete the migrations file & run migrations again. when this didn't work decided to delete all migration files in the tree & make migrations again. As this did not work I tried deleting the back on from a different angle to make sure all migrations we removed. Until I finally tried : python3 manage.py migrate contact zero, which managed to clear the database for me to run migrations & resolve problem &check;
+    ![Update review page](readme/assets/testing-images/user-story/contact-page-error.jpg)
 
 ##### Bug 2
-
+* 403, 404 & 500 pages not appearing on Heroku or local server. I tried everything until recently realising that static files must be loaded to the template for the error pages to function.
+    ![Update review page](readme/assets/testing-images/user-story/error-pages.jpg)
+##### Bug 3
+* 
 
 ### Known Bugs
 

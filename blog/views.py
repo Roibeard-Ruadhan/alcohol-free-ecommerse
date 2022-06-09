@@ -9,6 +9,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views.generic import UpdateView, DeleteView
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def error_403(request, exception):
@@ -38,10 +39,23 @@ def all_blog_posts(request):
 
     blog_posts = BlogPost.objects.all()
 
+    paginator = Paginator(blog_posts ,3)
+
+    page = request.GET.get('page')
+    try:
+        blogs = paginator.page(page)
+    except PageNotAnInteger:
+    # If page is not an integer, deliver first page.
+        blogs = paginator.page(1)
+    except EmptyPage:
+    # If page is out of range (e.g. 7777), deliver last page of results.
+        blogs = paginator.page(paginator.num_pages)
+      
+
     template = 'blog/blog.html'
 
     context = {
-        'blog_posts': blog_posts,
+        'blog_posts': blogs,
     }
 
     return render(request, template, context)
