@@ -456,8 +456,10 @@ The website was thoroughly tested as per the detailed account of the manual test
 * When they have updated the comment & clicked update they will get the folowing success message.&check;
     ![Update review page](readme/assets/testing-images/user-story/comment-updated.jpg)
 * When the user clicks to delete their review they will be directed to the delete comment page to confirm deletion. &check;
-* If they click delete they will get a success message & if they click cancel they will return to the products page.&check;
+* If they click delete they will get a success message & if they click cancel they will return to the products page. &check;
+* Pagination added to the bottom the the blog page to cater for more blogs being added in the future. &check;
 
+* As the paginator was only added very late in the project build it needs some CSS work in the future
 * I am critical at times of likes on comments so I did not add this but I may add the option to reply in the future.
 
 #### Contact

@@ -320,7 +320,18 @@ Database completed with the assistance of the [lucid chart](https://www.lucidcha
 [Back to contents](#contents)
 
 ## **Version Control**
+**Version control** was managed within **GitHub** and **Gitpod** and regular commits pushed to **GitHub**. 
+See below for how this was managed:
 
+### Gitpod Workspaces
+1. Starting from GitHub clone the [Code Institute template](https://github.com/Code-Institute-Org/gitpod-full-template) by clicking Use This Template and copying to my repository. The workspace is then launched by clicking GitPod - this action only needs to be performed once and then workspace reopened from GitPod.
+2. Start the Gitpod Workspace which opens an **online IDE editor** window.
+
+### Gitpod branching and committing to GitHub
+1. I created various branches to work on different sections of code to push to master. I did this by typing into the terminal the commands: *git status* to find out which branch currently on; *git switch -c <*branchname*>* to create a new branch and switch to it immediately and then once the work was completed on that branch typed *git add <*files to be added*>* , *git commit -m <*commit message*>* and *git push --set-upstream <*remote*> <*branchname*>* to push to GitHub.
+2. Meaningful commit messages were used to allow to roll back if needed.
+
+[Back to contents](#contents)
 
 ### Gitpod Workspaces
 

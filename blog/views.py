@@ -38,8 +38,8 @@ def all_blog_posts(request):
     """
 
     blog_posts = BlogPost.objects.all()
-
-    paginator = Paginator(blog_posts ,3)
+# Paginator is functioning but needs more work to meet site standard whence- 4
+    paginator = Paginator(blog_posts ,4) 
 
     page = request.GET.get('page')
     try:
