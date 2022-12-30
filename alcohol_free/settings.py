@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # DEBUG = 'DEVELOPMENT' in os.environ
 DEBUG = False
 
-ALLOWED_HOSTS = ['alcohol-free-shop.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['localhost', '*', 'alcohol-free-ecommerse.onrender.com']
 # Application definition
 # Add Render.com URL to allowed hosts
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
