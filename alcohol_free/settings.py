@@ -129,7 +129,6 @@ LOGIN_REDIRECT_URL = '/'
 
 # WSGI_APPLICATION = 'alcohol_free.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
