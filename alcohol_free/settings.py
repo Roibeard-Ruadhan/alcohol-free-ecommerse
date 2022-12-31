@@ -127,7 +127,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'alcohol-free-ecommerse.wsgi.application'
+# WSGI_APPLICATION = 'alcohol_free.wsgi.application'
 
 
 # Database
