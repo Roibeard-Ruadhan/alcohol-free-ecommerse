@@ -12,9 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-import django
-from django.utils.encoding import force_str
-django.utils.encoding.force_text = force_str
+from django.contrib.messages import constants as messages
+
+
 if os.path.exists("env.py"):
     import env
 
