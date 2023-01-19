@@ -1,0 +1,625 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
+     url('/media/hero.png') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Convergence', sans-serif;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+/* ------------- Logo*/
+.brand {
+    font-family: 'Monoton';
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.brand:hover {
+    color: #09334b !important;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+/*---------------------------  Home page Shop now button*/
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+    margin-bottom: 0;
+}
+
+.btn-outline-black {
+    background: black;
+    color: white !important; /* use important to override link colors for a elements */
+    border: .5px solid black;
+}
+
+/* ------ Global buttons used throughout website- Hover*/
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: white;
+    color: #ffc371 !important;
+}
+
+/* ------ Hover for global buttons used throughout website, primarily in the allauth pages stored in the allauth base.html */
+.allauth-form-inner-content button:hover, 
+.allauth-form-inner-content button:active, 
+.allauth-form-inner-content button:focus, 
+.allauth-form-inner-content input[type='submit']:hover,
+.allauth-form-inner-content input[type='submit']:active,
+.allauth-form-inner-content input[type='submit']:focus {
+    background: black;
+    color: #ffc371 !important;
+}
+/* Hover for Home page shop now button */
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: #ffc371 !important;
+}
+
+.btn-black {
+    margin-bottom: 1rem;
+}
+
+.text-black {
+    color: #0d0221 !important;
+}
+
+.border-black {
+    border: .5px solid black !important;
+}
+
+.bg-black {
+    background: #0d0221 !important;
+}
+/* To remove the background image from the majority of pages */
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.text-info {
+    color: #28a745;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+
+/* ------------------------------- Mailchimp */
+#mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    max-width: max-content;
+}
+
+#mc_embed_signup form {
+    width: min-content;
+}
+
+#mc_embed_signup .button:hover {
+    color: #ffc371 !important;
+}
+
+/* ------------------------------- bootstrap toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* Arrow up used on pages with more content-from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    color: #0d0221;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent; 
+    border-bottom: 8px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+.fa-arrow-up {
+    color: #ffc371 !important;
+    font-size: large;
+}
+
+/* ---- Bootsrap classes used for toast messages */
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+/* Bag notification confirming how many products with images */
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* ------------------Allauth content */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #0d0221;
+    border-radius: 20px;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #0d0221;
+    border: .5px solid #0d0221;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 20px;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+/* ---------------------------Product Form */
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 20px;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 20px;
+}
+
+/* --------------------footer */
+.footer {
+    background: #125E8A;
+    background: -webkit-linear-gradient(to right, #125E8A, #211A1D); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to right, #125E8A, #211A1D); /* W3C */
+    background: -moz-linear-gradient(to right, #125E8A, #211A1D);/* FF3.6+ */
+    background: -webkit-gradient(linear, to right, #125E8A, #211A1D);/* Chrome,Safari4+ */
+    background: -o-linear-gradient(to right, #125E8A, #211A1D);/* Opera 11.10+ */
+    background: -ms-linear-gradient(to right, #125E8A, #211A1D);/* IE10+ */
+    min-height: 10vh;
+    color: #ffc371;
+    margin-top: 1rem;
+}
+
+
+#button-addon1 {
+color: #ffc371;
+}
+
+i {
+color: #ffc371;
+}
+/* -------------------Forms */
+.form-control::placeholder {
+font-size: 0.95rem;
+color: #aaa;  /* Target placeholder to mute text */
+font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+box-shadow: none;
+}
+
+/* Shop Now descriptive text */
+.display-4.logo-font.text-black {
+font-size: 2rem;
+}
+
+/* --------------------------Navigation Bar */
+.navbar-expand-lg .navbar-nav 
+.nav-link:hover {
+    color: #ffc371!important;
+}
+
+.nav-link {
+    padding: 0.15rem;
+}
+
+.nav-link i.fa-lg {
+    font-size: 1rem;
+}
+
+.navbar-toggler {
+    padding: .6rem .6rem;
+    font-size: 1rem;
+}
+
+.hover:hover {
+    color: #125E8A!important;
+} 
+
+.hover-2:hover {
+    color: whitesmoke!important;
+}
+
+/* ----------- delivery banner */ 
+
+#delivery-banner h4 {
+    font-size: 1.3rem;
+}
+
+/* ----------------------Buttons for checkout */
+
+.btn.btn-outline-black.rounded-0{
+    padding: .375rem .375rem;
+    background-color: #0d0221 !important;
+    margin: 1rem;
+}
+
+.btn.btn-black.rounded-0  {
+    padding: .375rem .375rem;
+    background-color: #0d0221 !important;
+}
+
+.btn.btn-outline-black.rounded-0.btn-lg,
+.btn.btn-black.rounded-0.btn-lg {
+    padding: .375rem .375rem;
+    font-size: .75rem;
+}
+
+.increment-qty, .decrement-qty {
+    padding: .355rem .355rem !important;
+}
+
+/* -------------------------------Products page */
+/* --------------Review Products */
+.container-review {
+    width: 75vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-reader {
+    width: 100%;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    background: -webkit-linear-gradient(to right, #125E8A, #211A1D); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to right, #125E8A, rgb(0, 0, 0)); /* W3C */
+    background: -moz-linear-gradient(to right, #125E8A, #211A1D);/* FF3.6+ */
+    background: -webkit-gradient(linear, to right, #125E8A, #211A1D);/* Chrome,Safari4+ */
+    background: -o-linear-gradient(to right, #125E8A, #211A1D);/* Opera 11.10+ */
+    background: -ms-linear-gradient(to right, #125E8A, #211A1D);/* IE10+ */
+    color:#FFFFFF;
+    padding: 10px;
+}
+
+.review-body {
+    width: 700px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid transparent;
+}
+
+
+/* ------------- Rating Products: readme credits for Rathan Kumar tob hide radiobutton*/
+
+.rate > input {
+    display: none;
+}
+
+.rate {
+    display: inline-block;
+    border: 0;
+}
+
+.rate > label {
+    float: right;
+}
+
+/* start showing the stars */
+
+.rate > label:before {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: FontAwesome;
+    content: "\f005";
+    margin: 0;
+    padding: 0.3rem .2rem;
+    cursor: pointer;
+}
+
+/* Half stars */
+
+.rate, .half:before {
+    content: "\f009";
+    position: absolute;
+    padding-right: 0;
+}
+
+/* Click and hover */
+
+input:checked ~ label, label:hover ~ label {
+    color: #ffb503;
+}
+
+/* Hover highlight */
+
+input:checked + label:hover, input:checked ~ label:hover, input:checked ~ label:hover ~ label,
+label:hover ~ input:checked ~ label {
+    color: #cc9000;
+}
+
+/* -------------------------_  Blog page */
+
+.blog {
+    margin: 3rem;
+}
+
+.blog-container {
+    height: 22rem;
+}
+
+.blog-image-1 {
+    height: 22rem;
+    width: fit-content;
+    border: 3px solid #ddd;
+    padding: 1px;
+    border-radius: 8px;
+}
+
+/* -----------------Blog Details page */
+.heading {
+    justify-content: center;
+    text-align: center;
+}
+
+p.p-text {
+    text-align: center;
+}
+
+.background-cover {
+    background: #ffffff;
+    opacity: .9;
+    filter: alpha(opacity=90);  /* Opacity for IE8 and lower */
+    zoom: 1;  /*  Opacity fix for IE7 */
+    padding: 2rem;
+    margin:1rem;
+    width: 92%;
+}
+
+
+.blog-image-container {
+    border-radius: 8px;
+
+}
+
+.blog-image-2 img {
+    width: 60%;
+    height: 60%;
+    border: 3px solid #ddd;
+    padding: 1px;
+    border-radius: 8px;
+    
+}
+
+.blog-details-container {
+    border-radius: 8px
+}
+
+.card-reader {
+    width: 100%;
+}
+/*-- Blog comments */
+.comment-header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 14px;
+    overflow: hidden;
+    line-height: 0;
+    position: relative;
+    background: -webkit-linear-gradient(to right, #125E8A, #211A1D); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to right, #125E8A, rgb(0, 0, 0)); /* W3C */
+    background: -moz-linear-gradient(to right, #125E8A, #211A1D);/* FF3.6+ */
+    background: -webkit-gradient(linear, to right, #125E8A, #211A1D);/* Chrome,Safari4+ */
+    background: -o-linear-gradient(to right, #125E8A, #211A1D);/* Opera 11.10+ */
+    background: -ms-linear-gradient(to right, #125E8A, #211A1D);/* IE10+ */
+    color:#FFFFFF;
+    padding: 10px;
+}
+
+.comment-date {
+    font-size:x-small;
+}
+
+.comment-author {
+    color: #ffc371;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container-blog {
+    width: 75vw;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-body {
+    width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+
+
+
+/* -------------------------------- Media Queries */
+
+    /* Slightly larger container on xl screens */
+    @media (min-width: 1200px) {
+        .container {
+        max-width: 80%;
+        }
+    }
+
+      /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+  }
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+    .display-4 {
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+}
+@media (max-width: 520px) {
+    .display-4 {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
