@@ -6,7 +6,7 @@
 
 ## About
 
-Link to [live site](https://alcohol-free-shop.herokuapp.com/)
+Link to [live site](https://alcohol-free-ecommerse.onrender.com)
 
 ## **Contents**
 
