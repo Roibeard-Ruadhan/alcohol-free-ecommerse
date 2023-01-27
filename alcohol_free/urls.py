@@ -20,7 +20,6 @@ from django.conf.urls.static import static
 from home.views import handler_403, handler_404, handler_500
 
 urlpatterns = [
-    path('jet/', include('jet.urls', 'jet')),  # Django JET URLS
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),

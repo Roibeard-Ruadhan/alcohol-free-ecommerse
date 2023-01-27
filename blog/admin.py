@@ -1,7 +1,6 @@
 from django.contrib import admin
-from .models import BlogPost, BlogComment
 from reviews.models import Reviews
-
+from .models import BlogPost, BlogComment
 
 
 class BlogPostAdmin(admin.ModelAdmin):
