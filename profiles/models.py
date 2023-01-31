@@ -23,7 +23,7 @@ class UserProfile(models.Model):
                                       null=True, blank=True)
     default_postcode = models.CharField(max_length=20,
                                         null=True, blank=True)
-    country = models.CharField(max_length=2, null=True, blank=True, 
+    default_country = models.CharField(max_length=2, null=True, blank=True, 
     choices=pytz.country_names.items())
 
     def __str__(self):
