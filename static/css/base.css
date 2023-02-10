@@ -10,7 +10,47 @@ body {
     color: #555;
     font-family: 'Convergence', sans-serif;
 }
+/* Cards to allow new visual navigation option for products */
+.category-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.cards {
+    background: rgba(0, 0, 0, 0.527);
+    width: 270px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.cards:hover {
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.card-image {
+    background: #fff;
+    height: 280px;
+    margin-bottom: 10px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+    background-image: url(/media/b-Corona.png);
+}
+
+.card-2 {
+    background-image: url(/media/w-muscat.png);
+}
+
+.card-3 {
+    background-image: url(/media/s-monday.png);
+}
 /* from Bulma */
 .icon {
     align-items: center;
