@@ -4,7 +4,7 @@ html {
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),
-     url('/media/hero.png') no-repeat center center fixed;
+     url('/media/hero-4.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -35,7 +35,7 @@ body {
 .card-image {
     background: #fff;
     height: 280px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
