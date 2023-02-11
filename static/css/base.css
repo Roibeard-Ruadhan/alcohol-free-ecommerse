@@ -69,18 +69,33 @@ body {
     text-align: center;
     color: #fff;
 }
-
 .cards:hover {
     transform: scale(1.03);
     transition: all 1s ease;
 }
-
 .card-image {
     background: #fff;
     height: 280px;
     margin-bottom: 0px;
     background-size: cover;
     border-radius: 15px 15px 0 0;
+}
+
+.card a {
+    /* background-color: #0d0221; */
+    font-size: large;
+    height: 100px;
+    text-align:center;
+    color: #fff;
+    opacity: 0;
+    /* display: block; */
+}
+
+.card a:hover {
+    color: #ffc371 !important;
+    text-decoration: none;
+    opacity: 1;
+    transition: 1s;
 }
 
 .card-1 {
