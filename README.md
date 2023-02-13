@@ -6,7 +6,7 @@
 
 ## About
 
-Link to [live site](https://alcohol.free-shop.roibeardruadhan.com)
+Link to [live site](https://alcohol-free-shop.roibeardruadhan.com)
 
 ## **Contents**
 
