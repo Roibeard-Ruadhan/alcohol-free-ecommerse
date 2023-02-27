@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = os.environ.get('DJANGO_DEBUG')
+# DEBUG = os.environ.get('DJANGO_DEBUG')
 # DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '*', 'alcohol-free-ecommerse.onrender.com']
